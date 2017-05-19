@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="PropertyOpenHouse">
+
+	<!-- Use type aliases to avoid typing the full class name every time. -->
+	<typeAlias alias="PropertyOpenHouse" type="com.irets.bl.domain.PropertyOpenHouse" />
+	<typeAlias alias="SearchParam" type="ui.irets.service.unifiedsr.SearchParam" />
+	<typeAlias alias="FilterItem" type="ui.irets.service.unifiedsr.FilterItem" />
+
+	<resultMap id="PropertyOpenHouseResult" class="PropertyOpenHouse">
+		<result property="id" column="id" />
+		<result property="expiration_date" column="expiration_date" />
+		<result property="public_remarks" column="public_remarks" />
+		<result property="start_date_time" column="start_date_time" />
+		<result property="end_date_time" column="end_date_time" />
+		<result property="listing_id" column="listing_id" />
+		<result property="active" column="active" />
+		<result property="modification_timestamp" column="modification_timestamp" />
+		<result property="open_house_id" column="open_house_id" />
+		<result property="property_id" column="property_id" />
+	</resultMap>
+
+
+	<select id="getPropertyOpenHouseCount" resultClass="long">
+		select count(*) from property_openhouse
+    </select>
+
+	<select id="getPropertyOpenHouseCountForProperty"
+		parameterClass="string" resultClass="long">
+		select count(*) from property_openhouse where property_id=#id_Property#
+	</select>
+
+	<select id="getPropertyOpenHouses" resultMap="PropertyOpenHouseResult">
+		select *
+		from property_openhouse
+    </select>
+
+
+	<select id="getPropertyOpenHouse" parameterClass="string"
+		resultMap="PropertyOpenHouseResult">
+		select * from property_openhouse where open_house_id = #open_house_id#
+	</select>
+
+	<select id="getPropertyOpenHouseByPropertyId" parameterClass="string"
+		resultMap="PropertyOpenHouseResult">
+		select * from property_openhouse where property_id = #property_id#
+    </select>
+
+	<select id="getIdByPropertyId" parameterClass="string"
+		resultClass="long">
+		select id from property_openhouse where property_id=#id_Property# order by
+		id
+    </select>
+
+	<select id="getOpenHouseById" parameterClass="long"
+		resultMap="PropertyOpenHouseResult">
+		select * from property_openhouse where id = #id#
+    </select>
+
+
+	<select id="getOpenHouseByOpenHouseId" parameterClass="long"
+		resultMap="PropertyOpenHouseResult">
+		select * from property_openhouse where open_house_id = #id#
+    </select>
+
+	<insert id="insertPropertyOpenHouse">
+		insert into property_openhouse (
+		expiration_date,
+		public_remarks,
+		start_date_time,
+		end_date_time,
+		listing_id,
+		active,
+		modification_timestamp,
+		open_house_id,
+		property_id,
+		open_house_date,
+		start_time,
+		end_time
+		)
+		values (
+		#expiration_date#,
+		#public_remarks#,
+		#start_date_time#,
+		#end_date_time#,
+		#listing_id#,
+		#active#,
+		#modification_timestamp#,
+		#open_house_id#,
+		#property_id#,
+		#open_house_date#,
+		#start_time#,
+		#end_time#
+		)
+    </insert>
+
+	<update id="updatePropertyOpenHouse">
+		update property_openhouse set
+		property_id=#property_id#,
+		expiration_date=#expiration_date#,
+		public_remarks=#public_remarks#,
+		start_date_time=#start_date_time#,
+		end_date_time=#end_date_time#,
+		listing_id=#listing_id#,
+		active=#active#,
+		modification_timestamp=#modification_timestamp#,
+		open_house_id=#open_house_id#,
+		open_house_date=#open_house_date#,
+		start_time=#start_time#,
+		end_time=#end_time#
+
+		where open_house_id = #open_house_id#
+    </update>
+
+	<delete id="deletePropertyOpenHouse" parameterClass="string">
+		delete from property_openhouse where property_id = #property_id#
+    </delete>
+
+
+	<delete id="deleteExpiredOpenHouse">		
+		delete from property_openhouse 
+    </delete>
+    
+    <delete id="deleteExpiredOpenHouseByTime" parameterClass="long">		
+		delete from property_openhouse where start_date_time &lt; from_unixtime(#start_date_time#) 
+    </delete>
+    
+</sqlMap>

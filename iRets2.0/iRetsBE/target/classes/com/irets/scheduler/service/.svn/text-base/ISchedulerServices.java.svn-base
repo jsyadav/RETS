@@ -1,0 +1,1 @@
+package com.irets.scheduler.service;import org.quartz.JobDetail;import org.quartz.Trigger;public interface ISchedulerServices {	public void scheduleJob(JobDetail job, Trigger trigger);		public void scheduleJob (JobDetail job, Trigger trigger, String groupName);}

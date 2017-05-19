@@ -1,0 +1,1 @@
+package com.irets.exception;/** * @author iretsigrator.developer * */public class DuplicateSerialNumberException extends Exception {	public DuplicateSerialNumberException() {}		public DuplicateSerialNumberException (String s) {		super(s);	}		}

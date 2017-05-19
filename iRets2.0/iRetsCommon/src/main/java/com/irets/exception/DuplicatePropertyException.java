@@ -1,0 +1,1 @@
+package com.irets.exception;/** * @author iretsigrator developer * @since Feb 17, 2010 */public class DuplicatePropertyException extends Exception {    private String propertyName;    public DuplicatePropertyException(String propertyName) {        this.propertyName = propertyName;    }    public String getPropertyName() {        return propertyName;    }}

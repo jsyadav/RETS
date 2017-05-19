@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mtgr8_iretsigrator-v2/!svn/ver/55/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/domain
+END
+PropertyGeo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/domain/PropertyGeo.java
+END
+ResidentialProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mtgr8_iretsigrator-v2/!svn/ver/55/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/domain/ResidentialProperty.java
+END
+PropertyOpenHouse.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/25/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/domain/PropertyOpenHouse.java
+END
+PropertyPhoto.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/domain/PropertyPhoto.java
+END

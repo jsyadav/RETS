@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Errors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Error"/>
+      </xs:sequence>
+      <xs:attribute name="count" use="required" type="xs:integer"/>
+      <xs:attribute name="totalcount" use="required" type="xs:integer"/>
+      <xs:attribute name="elapsedtime" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Error">
+    <xs:complexType>
+    <xs:sequence>      
+      <xs:element name="Code"  type="xs:string"/>
+      <xs:element name="Description" type="xs:string"/>
+      </xs:sequence>          
+    </xs:complexType>
+  </xs:element>  
+  <xs:element name="Cities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="City"/>
+      </xs:sequence>
+      <xs:attribute name="count" use="required" type="xs:integer"/>
+      <xs:attribute name="totalcount" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Companies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Company"/>
+      </xs:sequence>
+      <xs:attribute name="count" use="required" type="xs:integer"/>
+      <xs:attribute name="totalcount" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Contacts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Contact"/>
+      </xs:sequence>
+      <xs:attribute name="count" use="required" type="xs:integer"/>
+      <xs:attribute name="totalcount" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Contact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="Name"/>
+        <xs:element ref="ContactSource"/>
+        <xs:element ref="JobTitle"/>
+        <xs:element ref="Background"/>
+        <xs:element ref="CompanyId"/>
+        <xs:element ref="Image"/>
+        <xs:element ref="Company"/>
+        <xs:element ref="Addresses"/>
+        <xs:element ref="EmailAddresses"/>
+        <xs:element ref="PhoneNumbers"/>
+        <xs:element ref="SecondaryContacts"/>
+        <xs:element ref="BuyerRequirements"/>
+        <xs:element ref="Notes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactSource" type="xs:string"/>
+  <xs:element name="JobTitle" type="xs:string"/>
+  <xs:element name="Background" type="xs:string"/>
+  <xs:element name="CompanyId" type="xs:integer"/>
+  <xs:element name="Addresses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="Type"/>
+        <xs:element ref="Street1"/>
+        <xs:element ref="Street2"/>
+        <xs:element ref="City"/>
+        <xs:element ref="State"/>
+        <xs:element ref="Country"/>
+        <xs:element ref="Zip"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Street1" type="xs:string"/>
+  <xs:element name="Street2">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="EmailAddresses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="EmailAddress"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhoneNumbers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="PhoneNumber"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhoneNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="Type"/>
+        <xs:element ref="Country"/>
+        <xs:element ref="Number"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Number" type="xs:integer"/>
+  <xs:element name="SecondaryContacts">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="BuyerRequirements">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element ref="PriceFrom"/>
+        <xs:element ref="PriceTo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PriceFrom" type="xs:integer"/>
+  <xs:element name="PriceTo" type="xs:integer"/>
+  <xs:element name="Notes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="Note"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Property"/>
+      </xs:sequence>
+      <xs:attribute name="count" use="required" type="xs:integer"/>
+      <xs:attribute name="totalcount" use="required" type="xs:integer"/>
+      <xs:attribute name="elapsedTime" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="AgentId"/>
+        <xs:element ref="ListingId"/>
+        <xs:element ref="StreetNumber"/>
+        <xs:element ref="StreetPrefix"/>
+        <xs:element ref="StreetName"/>
+        <xs:element ref="StreetSuffix"/>
+        <xs:element ref="City"/>
+        <xs:element ref="State"/>
+        <xs:element ref="Zip"/>
+        <xs:element ref="Zip10"/>
+        <xs:element ref="Country"/>
+        <xs:element ref="County"/>
+        <xs:element ref="SubDivision"/>
+        <xs:element ref="SqFt"/>
+        <xs:element ref="LotSqFt"/>
+        <xs:element ref="Status"/>
+        <xs:element ref="ListDate"/>
+        <xs:element ref="ListPrice"/>
+        <xs:element ref="ModificationTimestamp"/>
+        <xs:element ref="ContactDate"/>
+        <xs:element ref="CloseDate"/>
+        <xs:element ref="ClosePrice"/>
+        <xs:element ref="TaxAmount"/>
+        <xs:element ref="Latitude"/>
+        <xs:element ref="Longitude"/>
+        <xs:element ref="ElementarySchool"/>
+        <xs:element ref="MiddleOrJuniorSchool"/>
+        <xs:element ref="HighSchool"/>
+        <xs:element ref="SchoolDistrict"/>
+        <xs:element ref="BuilderName"/>
+        <xs:element ref="Remarks"/>
+        <xs:element ref="Disclosures"/>
+        <xs:element ref="AgentName"/>
+        <xs:element ref="AgentFirstName"/>
+        <xs:element ref="AgentLastName"/>
+        <xs:element ref="AgentCompany"/>
+        <xs:element ref="AssociationFee"/>
+        <xs:element ref="AssociationFeeFrequency"/>
+        <xs:element ref="VirtualTourURL"/>
+        <xs:element ref="Photos"/>
+        <xs:element ref="FullAddress"/>
+        <xs:element ref="Type"/>
+        <xs:element ref="Style"/>
+        <xs:element ref="Bedrooms"/>
+        <xs:element ref="FullBathrooms"/>
+        <xs:element ref="HalfBathrooms"/>
+        <xs:element ref="Rooms"/>
+        <xs:element ref="Garage"/>
+        <xs:element ref="CarPort"/>
+        <xs:element ref="YearBuilt"/>
+        <xs:element ref="ConstructionMaterials"/>
+        <xs:element ref="Cooling"/>
+        <xs:element ref="DiningRoomDescription"/>
+        <xs:element ref="EnergySavingFeatures"/>
+        <xs:element ref="ExteriorFeatures"/>
+        <xs:element ref="LotFeatures"/>
+        <xs:element ref="Fencing"/>
+        <xs:element ref="FireplaceFeatures"/>
+        <xs:element ref="Flooring"/>
+        <xs:element ref="Heating"/>
+        <xs:element ref="KitchenDescription"/>
+        <xs:element ref="LaundryDescription"/>
+        <xs:element ref="OtherRoomsDescription"/>
+        <xs:element ref="Roof"/>
+        <xs:element ref="PoolFeatures"/>
+        <xs:element ref="SpaFeatures"/>
+        <xs:element ref="Utilities"/>
+        <xs:element ref="Electric"/>
+        <xs:element ref="Water"/>
+        <xs:element ref="Gas"/>
+        <xs:element ref="Sewer"/>
+        <xs:element ref="Area"/>
+        <xs:element ref="GarageDescription"/>
+        <xs:element ref="ListTeamAgentDREs"/>
+        <xs:element ref="Foundation"/>
+        <xs:element ref="OtherRooms"/>
+        <xs:element ref="ListingLicenseNumber"/>
+        <xs:element ref="HorsePropDesc"/>
+        <xs:element ref="BathsHalf"/>
+        <xs:element ref="PublicRemarks"/>
+        <xs:element ref="OtherAreas"/>
+        <xs:element ref="CrossStreet"/>
+        <xs:element ref="Pool"/>
+        <xs:element ref="PoolOptions"/>
+        <xs:element ref="Property_Energy_Information"/>
+        <xs:element ref="HasPool"/>
+        <xs:element ref="Property_Age"/>
+        <xs:element ref="HasFireplaces"/>
+        <xs:element ref="YardGrounds"/>
+        <xs:element ref="BathroomFeatures"/>
+        <xs:element ref="CityUnincorporated"/>
+        <xs:element ref="FirePlace_Details"/>
+        <xs:element ref="FormalDiningRoom"/>
+        <xs:element ref="Property_Disability_Features"/>
+        <xs:element ref="Property_Inclusions"/>
+        <xs:element ref="Stories"/>
+        <xs:element ref="Insulation"/>
+        <xs:element ref="SewerSeptic"/>
+        <xs:element ref="InFormalDiningRoom"/>
+        <xs:element ref="FloorCovering"/>
+        <xs:element ref="ListingAreaCode"/>
+        <xs:element ref="HorseProp"/>
+        <xs:element ref="CityLimits"/>
+        <xs:element ref="LotSizeArea_Units"/>
+        <xs:element ref="FamilyRoom"/>
+        <xs:element ref="Property_HotTub"/>
+        <xs:element ref="VirtualTourLink"/>
+        <xs:element ref="UnbrandedVirtualTourLink"/>
+        <xs:element ref="FireplaceLocation"/>
+        <xs:element ref="BedroomDescription"/>
+        <xs:element ref="LotDescription"/>
+        <xs:element ref="ShowerTub"/>
+        <xs:element ref="Levels"/>
+        <xs:element ref="AssociationFeeIncludes"/>
+        <xs:element ref="Community_CommunityName"/>
+        <xs:element ref="TotalUnits"/>
+        <xs:element ref="UnitLocation"/>
+        <xs:element ref="Complex_Features"/>
+        <xs:element ref="TractName"/>
+        <xs:element ref="UnitDescription"/>
+        <xs:element ref="Parking_Total"/>
+        <xs:element ref="NumberUnits"/>
+        <xs:element ref="PhotoModificationTimestamp"/>
+        <xs:element ref="VOWAVM"/>
+        <xs:element ref="NewListingID"/>
+        <xs:element ref="ListingBranchNum"/>
+        <xs:element ref="VOWComm"/>
+        <xs:element ref="BLEOptIn"/>
+        <xs:element ref="RevisionDate"/>
+	    <xs:element ref="AdditionalListingInfo"/>
+	  <xs:element ref="ListingType"/>
+	  <xs:element ref="Zoning"/>
+	  <xs:element ref="Exterior"/>
+	  <xs:element ref="Tub"/>
+	  <xs:element ref="WarrantyInfo"/>
+	  <xs:element ref="View"/>
+	  <xs:element ref="Amenities"/>
+	  <xs:element ref="Directions"/>
+	  <xs:element ref="Shower"/>
+	  <xs:element ref="PropertyType"/>   
+	  <xs:element ref="MlsName"/>
+ 	  <xs:element ref="MlsLogo"/>
+  	  <xs:element ref="MlsDisclaimer"/>      
+      <xs:element ref="OpenHouses"/>
+
+        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Area" type="xs:string"/>
+  <xs:element name="GarageDescription" type="xs:string"/>  
+  <xs:element name="AgentId" type="xs:string"/>
+  <xs:element name="ListingId" type="xs:string"/>
+  <xs:element name="StreetNumber" type="xs:string"/>
+  <xs:element name="StreetPrefix" type="xs:string"/>
+  <xs:element name="StreetName" type="xs:string"/>
+  <xs:element name="StreetSuffix" type="xs:string"/>
+  <xs:element name="Zip10" type="xs:string"/>
+  <xs:element name="County" type="xs:string"/>
+  <xs:element name="SubDivision" type="xs:string"/>
+  <xs:element name="SqFt" type="xs:string"/>
+  <xs:element name="LotSqFt" type="xs:string"/>
+  <xs:element name="Status" type="xs:NCName"/>
+  <xs:element name="ListDate" type="xs:string"/>
+  <xs:element name="ListPrice" type="xs:string"/>
+  <xs:element name="ModificationTimestamp" type="xs:string"/>
+  <xs:element name="ContactDate" type="xs:string"/>
+  <xs:element name="CloseDate" type="xs:string"/>
+  <xs:element name="ClosePrice" type="xs:string"/>
+  <xs:element name="TaxAmount" type="xs:string"/>
+  <xs:element name="Latitude" type="xs:decimal"/>
+  <xs:element name="Longitude" type="xs:decimal"/>
+  <xs:element name="ElementarySchool" type="xs:string"/>
+  <xs:element name="MiddleOrJuniorSchool" type="xs:string"/>
+  <xs:element name="HighSchool" type="xs:string"/>
+  <xs:element name="SchoolDistrict" type="xs:string"/>
+  <xs:element name="BuilderName" type="xs:string"/>
+  <xs:element name="Remarks" type="xs:string"/>
+  <xs:element name="Disclosures" type="xs:string"/>
+  <xs:element name="AgentName" type="xs:string"/>
+  <xs:element name="AgentFirstName" type="xs:string"/>
+  <xs:element name="AgentLastName" type="xs:string"/>
+  <xs:element name="AgentCompany" type="xs:string"/>
+  <xs:element name="AssociationFee" type="xs:string"/>
+  <xs:element name="AssociationFeeFrequency" type="xs:string"/>
+  <xs:element name="VirtualTourURL" type="xs:string"/>
+  <xs:element name="Photos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Photo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Photo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Url"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Url" type="xs:anyURI"/>
+  <xs:element name="FullAddress" type="xs:string"/>
+  <xs:element name="Style" type="xs:string"/>
+  <xs:element name="Bedrooms" type="xs:string"/>
+  <xs:element name="FullBathrooms" type="xs:string"/>
+  <xs:element name="HalfBathrooms" type="xs:string"/>
+  <xs:element name="Rooms" type="xs:string"/>
+  <xs:element name="Garage" type="xs:string"/>
+  <xs:element name="CarPort" type="xs:string"/>
+  <xs:element name="YearBuilt" type="xs:string"/>
+  <xs:element name="ConstructionMaterials" type="xs:string"/>
+  <xs:element name="Cooling" type="xs:string"/>
+  <xs:element name="DiningRoomDescription" type="xs:string"/>
+  <xs:element name="EnergySavingFeatures" type="xs:string"/>
+  <xs:element name="ExteriorFeatures" type="xs:string" />
+
+  <xs:element name="ExteriorFeaturesList">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element name="ExteriorFeature" type="xs:string" maxOccurs="unbounded" minOccurs="1"/>
+          </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+
+  <xs:element name="LotFeatures" type="xs:string"/>
+  <xs:element name="Fencing" type="xs:string"/>
+  <xs:element name="FireplaceFeatures" type="xs:string"/>
+  <xs:element name="Flooring" type="xs:string"/>
+  <xs:element name="Heating" type="xs:string"/>
+  <xs:element name="KitchenDescription" type="xs:string"/>
+  <xs:element name="LaundryDescription" type="xs:string"/>
+  <xs:element name="OtherRoomsDescription" type="xs:string"/>
+  <xs:element name="Roof" type="xs:string"/>
+  <xs:element name="PoolFeatures"  type="xs:string"/>
+  <xs:element name="SpaFeatures" type="xs:string"/>
+  <xs:element name="Utilities" type="xs:string"/>
+  <xs:element name="Electric" type="xs:string"/>
+  <xs:element name="Water" type="xs:string"/>
+  <xs:element name="Gas" type="xs:string"/>
+  <xs:element name="Sewer" type="xs:string"/>
+  <xs:element name="Tags">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Tag"/>
+      </xs:sequence>
+      <xs:attribute name="count" use="required" type="xs:integer"/>
+      <xs:attribute name="totalcount" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Company">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="Name"/>
+        <xs:element ref="Industry"/>
+        <xs:element ref="Image"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Industry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Id"/>
+        <xs:element ref="Name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Id" type="xs:string"/>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Image" type="xs:anyURI"/>
+  <xs:element name="Type" type="xs:NCName"/>
+  <xs:element name="City" type="xs:string"/>
+  <xs:element name="State" type="xs:string"/>
+  <xs:element name="Country" type="xs:string"/>
+  <xs:element name="Zip" type="xs:string"/>
+  <xs:element name="EmailAddress" type="xs:string"/>
+  <xs:element name="Note">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Note"/>
+        <xs:element ref="Date"/>
+        <xs:element ref="UserId"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Date" type="xs:string"/>
+  <xs:element name="UserId" type="xs:integer"/>
+  
+  <xs:element name="ListTeamAgentDREs" type="xs:string"/>
+  <xs:element name="Foundation" type="xs:string"/>
+  <xs:element name="OtherRooms" type="xs:string"/>
+  <xs:element name="ListingLicenseNumber" type="xs:string"/>
+  <xs:element name="HorsePropDesc" type="xs:string"/>
+  <xs:element name="BathsHalf" type="xs:string"/>
+  <xs:element name="PublicRemarks" type="xs:string"/>
+  <xs:element name="OtherAreas" type="xs:string"/>
+  <xs:element name="CrossStreet" type="xs:string"/>
+  <xs:element name="Pool" type="xs:string"/>
+  <xs:element name="PoolOptions" type="xs:string"/>
+  <xs:element name="Property_Energy_Information" type="xs:string"/>
+  <xs:element name="HasPool" type="xs:string"/>
+  <xs:element name="Property_Age" type="xs:string"/>
+  <xs:element name="HasFireplaces" type="xs:string"/>
+  <xs:element name="YardGrounds" type="xs:string"/>
+  <xs:element name="BathroomFeatures" type="xs:string"/>
+  <xs:element name="CityUnincorporated" type="xs:string"/>
+  <xs:element name="FirePlace_Details" type="xs:string"/>
+  <xs:element name="FormalDiningRoom" type="xs:string"/>
+  <xs:element name="Property_Disability_Features" type="xs:string"/>
+  <xs:element name="Property_Inclusions" type="xs:string"/>
+  <xs:element name="Stories" type="xs:string"/>
+  <xs:element name="Insulation" type="xs:string"/>
+  <xs:element name="SewerSeptic" type="xs:string"/>
+  <xs:element name="InFormalDiningRoom" type="xs:string"/>
+  <xs:element name="FloorCovering" type="xs:string"/>
+  <xs:element name="ListingAreaCode" type="xs:string"/>
+  <xs:element name="HorseProp" type="xs:string"/>
+  <xs:element name="CityLimits" type="xs:string"/>
+  <xs:element name="LotSizeArea_Units" type="xs:string"/>
+  <xs:element name="FamilyRoom" type="xs:string"/>
+  <xs:element name="Property_HotTub" type="xs:string"/>
+  <xs:element name="VirtualTourLink" type="xs:string"/>
+  <xs:element name="UnbrandedVirtualTourLink" type="xs:string"/>
+  <xs:element name="FireplaceLocation" type="xs:string"/>
+  <xs:element name="BedroomDescription" type="xs:string"/>
+  <xs:element name="LotDescription" type="xs:string"/>
+  <xs:element name="ShowerTub" type="xs:string"/>
+  <xs:element name="Levels" type="xs:string"/>
+  <xs:element name="AssociationFeeIncludes" type="xs:string"/>
+  <xs:element name="Community_CommunityName" type="xs:string"/>
+  <xs:element name="TotalUnits" type="xs:string"/>
+  <xs:element name="UnitLocation" type="xs:string"/>
+  <xs:element name="Complex_Features" type="xs:string"/>
+  <xs:element name="TractName" type="xs:string"/>
+  <xs:element name="UnitDescription" type="xs:string"/>
+  <xs:element name="Parking_Total" type="xs:string"/>
+  <xs:element name="NumberUnits" type="xs:string"/>
+  <xs:element name="PhotoModificationTimestamp" type="xs:string"/>
+  <xs:element name="VOWAVM" type="xs:string"/>
+  <xs:element name="NewListingID" type="xs:string"/>
+  <xs:element name="ListingBranchNum" type="xs:string"/>
+  <xs:element name="VOWComm" type="xs:string"/>
+  <xs:element name="BLEOptIn" type="xs:string"/>
+  <xs:element name="RevisionDate" type="xs:string"/>
+  
+  <xs:element name="AdditionalListingInfo" type="xs:string"/>
+  <xs:element name="ListingType" type="xs:string"/>
+  <xs:element name="Zoning" type="xs:string"/>
+  <xs:element name="Exterior" type="xs:string"/>
+  <xs:element name="Tub" type="xs:string"/>
+  <xs:element name="WarrantyInfo" type="xs:string"/>
+  <xs:element name="View" type="xs:string"/>
+  <xs:element name="Amenities" type="xs:string"/>
+  <xs:element name="Directions" type="xs:string"/>
+  <xs:element name="Shower" type="xs:string"/>
+  <xs:element name="PropertyType" type="xs:string"/>
+  <xs:element name="MlsName" type="xs:string"/>
+  <xs:element name="MlsLogo" type="xs:string"/>
+  <xs:element name="MlsDisclaimer" type="xs:string"/>
+  <xs:element name="OpenHouses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="OpenHouse"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OpenHouse">
+    <xs:complexType>
+      <xs:sequence>
+		  <xs:element name="OpenHousePublicRemarks" type="xs:string"/>
+		  <xs:element name="StartDateTime" type="xs:string"/>
+		  <xs:element name="EndDateTime" type="xs:string"/>
+		  <xs:element name="PropertyID" type="xs:string"/>
+		  <xs:element name="ListingID" type="xs:string"/>
+		  <xs:element name="OpenHouseID" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  
+  
+</xs:schema>

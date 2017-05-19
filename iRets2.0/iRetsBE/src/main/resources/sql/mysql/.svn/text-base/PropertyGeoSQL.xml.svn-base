@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="PropertyGeo">
+
+    <!-- Use type aliases to avoid typing the full class name every time. -->
+    <typeAlias alias="PropertyGeo" type="com.irets.bl.domain.PropertyGeo"/>
+	<typeAlias alias="SearchParam" type="ui.irets.service.unifiedsr.SearchParam"/>
+	<typeAlias alias="FilterItem" type="ui.irets.service.unifiedsr.FilterItem"/>
+
+    <resultMap id="PropertyGeoResult" class="PropertyGeo">
+        <result property="id" column="id"/>
+        <result property="property_id" column="property_id"/>
+        <result property="latitude" column="latitude"/>
+        <result property="longitude" column="longitude"/>
+        <result property="mls_number" column="mls_number"/>
+    </resultMap>
+
+
+    <select id="getPropertyGeoCount" resultClass="long">
+    	select count(*) from property_geo
+    </select>
+	
+	<select id="getPropertyGeos" resultMap="PropertyGeoResult">
+    	select *
+    	from property_geo
+    </select>
+	
+
+	<select id="getPropertyGeo" parameterClass="string" resultMap="PropertyGeoResult">
+    	select * from property_geo where property_id = #property_id#
+    </select>
+
+	<select id="getGeoIdByPropertyId" parameterClass="string" resultClass="long">
+    	select id from property_geo where property_id=#id_Property# order by id
+    </select>
+
+	<select id="getGeoById" parameterClass="long" resultMap="PropertyGeoResult">
+    	select * from property_geo where id = #id#
+    </select>
+
+    <select id="getGeoByPropId" parameterClass="long" resultMap="PropertyGeoResult">
+    	select * from property_geo where property_id = #property_id#
+    </select>
+
+
+    <insert id="insertPropertyGeo">
+        insert into property_geo (
+    property_id,
+    latitude,
+    longitude,
+    mls_number
+)
+values (
+    #property_id#,
+    #latitude#,
+    #longitude#,
+    #mls_number#
+)
+    </insert>
+
+    <update id="updatePropertyGeo">
+    	update property_geo set property_id=#property_id#,
+    latitude=#latitude#,
+    longitude=#longitude#,
+    mls_number=#mls_number#
+    	where property_id = #property_id#
+    </update>
+
+    <delete id="deletePropertyGeo" parameterClass="long">
+        delete from property_geo where property_id = #property_id#
+    </delete> 
+	
+</sqlMap>

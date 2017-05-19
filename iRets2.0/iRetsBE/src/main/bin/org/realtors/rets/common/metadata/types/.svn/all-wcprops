@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types
+END
+MValidationExternalType.class
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MValidationExternalType.class
+END
+MEditMask.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MEditMask.class
+END
+MForeignKey.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MForeignKey.class
+END
+MClass.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MClass.class
+END
+MObject.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MObject.class
+END
+MLookup.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MLookup.class
+END
+MValidationExpression.class
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MValidationExpression.class
+END
+MLookupType.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MLookupType.class
+END
+MSearchHelp.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MSearchHelp.class
+END
+MUpdate.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MUpdate.class
+END
+MUpdateType.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MUpdateType.class
+END
+MSystem.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MSystem.class
+END
+MValidationLookup.class
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MValidationLookup.class
+END
+MValidationLookupType.class
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MValidationLookupType.class
+END
+MTable.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MTable.class
+END
+MResource.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MResource.class
+END
+MUpdateHelp.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MUpdateHelp.class
+END
+MValidationExternal.class
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/types/MValidationExternal.class
+END

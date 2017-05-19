@@ -1,0 +1,1 @@
+/** *  */package com.irets.exception;/** * @author iretsigrator.developer * */public class DuplicateIdentifierException extends Exception {	public DuplicateIdentifierException() {}		public DuplicateIdentifierException (String s) {		super(s);	}			}

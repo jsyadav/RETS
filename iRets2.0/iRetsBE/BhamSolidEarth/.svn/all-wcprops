@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mtgr8_iretsigrator-v2/!svn/ver/60/iRets2.0/iRetsBE/BhamSolidEarth
+END
+db.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mtgr8_iretsigrator-v2/!svn/ver/35/iRets2.0/iRetsBE/BhamSolidEarth/db.properties
+END
+isolid_login_credentials.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mtgr8_iretsigrator-v2/!svn/ver/60/iRets2.0/iRetsBE/BhamSolidEarth/isolid_login_credentials.properties
+END
+isolid_field_mapping.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mtgr8_iretsigrator-v2/!svn/ver/35/iRets2.0/iRetsBE/BhamSolidEarth/isolid_field_mapping.properties
+END

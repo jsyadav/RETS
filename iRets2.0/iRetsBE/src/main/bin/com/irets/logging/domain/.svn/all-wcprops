@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/logging/domain
+END
+Log4jSyslogAppenderHandler.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/logging/domain/Log4jSyslogAppenderHandler.class
+END
+AppLogger.class
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/logging/domain/AppLogger.class
+END
+Syslog.class
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/logging/domain/Syslog.class
+END

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata
+END
+MetadataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetadataException.java
+END
+MetaParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetaParseException.java
+END
+CacheKey.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/CacheKey.class
+END
+AttrType.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/AttrType.class
+END
+MetaObject.class
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetaObject.class
+END
+Metadata.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/Metadata.class
+END
+JDomStandardBuilder.class
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/JDomStandardBuilder.class
+END
+MetadataType.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetadataType.class
+END
+JDomCompactBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/JDomCompactBuilder.java
+END
+MetadataBuilder.class
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetadataBuilder.class
+END
+AttrType.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/AttrType.java
+END
+MetaObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetaObject.java
+END
+Metadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/Metadata.java
+END
+MetaCollector.class
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetaCollector.class
+END
+JDomStandardBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/JDomStandardBuilder.java
+END
+MetadataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetadataType.java
+END
+MetadataException.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetadataException.class
+END
+MetaParseException.class
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetaParseException.class
+END
+MetadataBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetadataBuilder.java
+END
+JDomCompactBuilder.class
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/JDomCompactBuilder.class
+END
+MetaCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/org/realtors/rets/common/metadata/MetaCollector.java
+END

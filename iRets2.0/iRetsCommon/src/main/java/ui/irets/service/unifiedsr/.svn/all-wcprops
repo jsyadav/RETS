@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mtgr8_iretsigrator-v2/!svn/ver/53/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr
+END
+FilterItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr/FilterItem.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/53/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr/Filter.java
+END
+SearchParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/53/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr/SearchParam.java
+END
+SearchParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr/SearchParameter.java
+END
+SimpleRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/40/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr/SimpleRange.java
+END
+SortingParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr/SortingParameter.java
+END
+GeoParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mtgr8_iretsigrator-v2/!svn/ver/42/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/unifiedsr/GeoParameter.java
+END

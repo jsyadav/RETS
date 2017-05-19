@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mtgr8_iretsigrator-v2/!svn/ver/58/iRets2.0/iRetsFE/src/main/resources/sql/mysql
+END
+CommonSQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mtgr8_iretsigrator-v2/!svn/ver/58/iRets2.0/iRetsFE/src/main/resources/sql/mysql/CommonSQL.xml
+END
+ResidentialPropertySQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mtgr8_iretsigrator-v2/!svn/ver/58/iRets2.0/iRetsFE/src/main/resources/sql/mysql/ResidentialPropertySQL.xml
+END
+PropertyOpenHouseSQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mtgr8_iretsigrator-v2/!svn/ver/16/iRets2.0/iRetsFE/src/main/resources/sql/mysql/PropertyOpenHouseSQL.xml
+END
+PropertyPhotoSQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/resources/sql/mysql/PropertyPhotoSQL.xml
+END

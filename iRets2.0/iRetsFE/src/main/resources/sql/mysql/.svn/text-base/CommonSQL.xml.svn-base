@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Common">
+<!--
+    Reusable SQL order by. Parameter class for query should have property
+    List<SortingParameter> sortingOrder. Each element of list has field 'property' containing column name
+    and field 'ascending' indicating sorting order.
+    Usage Example:  
+    <select id="searchForAllUrls" parameterClass="UrlSearchCriteria" resultMap="UrlItemResult">
+        select * from URL_ITEMS where URL like #searchString# and LIST_ID = #listId#
+        <include refid="order"/>
+        LIMIT #startIndex#,#pageSize#
+    </select>
+-->
+    <sql id="order">
+        <dynamic>
+            <isPropertyAvailable property="sortingOrder">
+                <isNotNull property="sortingOrder">
+                    <isNotEmpty property="sortingOrder">
+                        <iterate open="order by" conjunction="," property="sortingOrder">
+                            $sortingOrder[].property$
+                            <isEqual property="sortingOrder[].ascending" compareValue="true">
+                                ASC
+                            </isEqual>
+                            <isEqual property="sortingOrder[].ascending" compareValue="false">
+                                DESC
+                            </isEqual>
+                        </iterate>
+                    </isNotEmpty>
+                </isNotNull>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>
+    <sql id="searchExactLikeOr">
+        <dynamic>
+            <isPropertyAvailable property="searchInProperties">
+                <isPropertyAvailable property="searchString">
+                    <isNotNull property="searchInProperties">
+                        <isNotNull property="searchString">
+                            <isNotEmpty property="searchInProperties">
+                                <iterate open="AND (" conjunction=" OR " property="searchInProperties" close=")">
+                                    $searchInProperties[]$ LIKE #searchString#
+                                </iterate>
+                            </isNotEmpty>
+                        </isNotNull>
+                    </isNotNull>
+                </isPropertyAvailable>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>
+	<sql id="searchExactLikeAnd">        <dynamic>            <isPropertyAvailable property="exactSearchParameters">                <isNotNull property="exactSearchParameters">                    <isNotEmpty property="exactSearchParameters">                        <iterate open="and " conjunction="and" property="exactSearchParameters">                            $exactSearchParameters[].field$ like '$exactSearchParameters[].value$'                        </iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql>    	<sql id="searchWildLikeAnd">
+        <dynamic>
+            <isPropertyAvailable property="searchParameters">
+                <isNotNull property="searchParameters">
+                    <isNotEmpty property="searchParameters">
+                        <iterate open="and " conjunction="and" property="searchParameters">
+                            $searchParameters[].field$ like '%$searchParameters[].value$%'
+                        </iterate>
+                    </isNotEmpty>
+                </isNotNull>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>        <!--      Formula to find the property within a given distance from a given point     call getNearByProperties(36.5668,-121.953,1);        delimiter //drop procedure if exists getNearByProperties //create procedure getNearByProperties(lat1 float, long1 float,dist float) 	begin	declare R_miles float;	declare delta_lat float;	declare lat_max float;	declare lat_min float;	declare long_max float;	declare long_min float;	declare delta_long float;	set R_miles = 3959;	set delta_lat = dist/R_miles;	set lat_max = lat1 + delta_lat;	set lat_min = lat1 - delta_lat;	set delta_long = asin(sin(delta_lat)/cos(lat1));	set long_max = long1 + delta_long;	set long_min = long1 - delta_long;		select r.id_property from property_geo g, residential_property r  where	(g.latitude >= lat_min AND g.latitude <= lat_max) AND 	(g.longitude >= long_min AND g.longitude <= long_max) AND	((acos(sin(lat1) * sin(g.latitude) + cos(lat1) * cos(g.latitude) * cos(g.longitude - (long1))) * R_miles) <= dist) AND	(r.id_property = g.property_id) ;	end //Here we are not using property_geo, but instead residential_propertydistance, dist = arccos(sin(lat1) · sin(lat2) + cos(lat1) · cos(lat2) · cos(lon1 - lon2)) · R		((acos(sin(radians(#geoSearchParameter.latitude#)) * sin(radians(lat)) + 		  cos(radians(#geoSearchParameter.latitude#)) * cos(radians(lat)) * 		  cos(radians(_long - (#geoSearchParameter.longitude#)))) * 3959) 		  &lt;= #geoSearchParameter.distance#)Just only the above query requires the full table scale, to reduce the sample set find max and min of lat and long.Reference http://janmatuschek.de/LatitudeLongitudeBoundingCoordinates This condition required to reduce the sample where we need to run the distance filter AND (lat &gt;= (#geoSearchParameter.latitude# - 57.3*(#geoSearchParameter.distance#/3959)) AND       lat &lt;= (#geoSearchParameter.latitude# + 57.3*(#geoSearchParameter.distance#/3959))) AND     (_long &gt;= (#geoSearchParameter.longitude# - 57.3*asin(sin(#geoSearchParameter.distance#/3959)/cos(radians(#geoSearchParameter.latitude#)))) AND 	  _long &lt;= (#geoSearchParameter.longitude# + 57.3*asin(sin(#geoSearchParameter.distance#/3959)/cos(radians(#geoSearchParameter.latitude#))))) AND             -->    <sql id="geoSearch">    	<dynamic>    		<isPropertyAvailable property="geoSearchParameter">                <isNotNull property="geoSearchParameter">                    <isNotEmpty property="geoSearchParameter">                                         										AND 					(lat &gt;= (#geoSearchParameter.latitude# - 57.3*(#geoSearchParameter.distance#/3959)) AND       			     lat &lt;= (#geoSearchParameter.latitude# + 57.3*(#geoSearchParameter.distance#/3959))) AND      			     (_long &gt;= (#geoSearchParameter.longitude# - 57.3*asin(sin(#geoSearchParameter.distance#/3959)/cos(radians(#geoSearchParameter.latitude#)))) AND 					  _long &lt;= (#geoSearchParameter.longitude# + 57.3*asin(sin(#geoSearchParameter.distance#/3959)/cos(radians(#geoSearchParameter.latitude#))))) AND					((acos(sin(radians(#geoSearchParameter.latitude#)) * sin(radians(lat)) + 					  cos(radians(#geoSearchParameter.latitude#)) * cos(radians(lat)) * 					  cos(radians(_long - (#geoSearchParameter.longitude#)))) * 3959) 					  &lt;= #geoSearchParameter.distance#)                	</isNotEmpty>                </isNotNull>             </isPropertyAvailable>    	    	</dynamic>        </sql>
+		<sql id="searchIn">        <dynamic>            <isPropertyAvailable property="searchForFieldItemsParameters">                <isNotNull property="searchForFieldItemsParameters">                    <isNotEmpty property="searchForFieldItemsParameters">                        <iterate open="and " conjunction="and" property="searchForFieldItemsParameters">                            TRIM($searchForFieldItemsParameters[].field$) in ($searchForFieldItemsParameters[].value$)                        </iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql>	<sql id="searchForZip">        <dynamic>             <isPropertyAvailable property="searchZipParameters">                <isNotNull property="searchZipParameters">                    <isNotEmpty property="searchZipParameters">						<iterate open="and zipCode in(" conjunction="," close=")" property="searchZipParameters">							'$searchZipParameters[].value$'						</iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql>    
+    <sql id="searchWildLikeOr">
+        <dynamic>
+            <isPropertyAvailable property="keywordSearchParameters">
+                <isNotNull property="keywordSearchParameters">
+                    <isNotEmpty property="keywordSearchParameters">
+                        <iterate open="and (" conjunction="or" property="keywordSearchParameters" close=")">
+                            $keywordSearchParameters[].field$ like '%$keywordSearchParameters[].value$%'
+                        </iterate>
+                    </isNotEmpty>
+                </isNotNull>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>
+		<sql id="rangeSearch">        <dynamic>            <isPropertyAvailable property="rangeSearchParameters">                <isNotNull property="rangeSearchParameters">                    <isNotEmpty property="rangeSearchParameters">                        <iterate open="and (" conjunction="and" property="rangeSearchParameters" close=")">                        	<isNull property="rangeSearchParameters[].minValue">                        		<isNotNull property="rangeSearchParameters[].maxValue">								$rangeSearchParameters[].field$ &lt;= '$rangeSearchParameters[].maxValue$'								</isNotNull>							</isNull>							<isNotNull property="rangeSearchParameters[].minValue">								<isNull property="rangeSearchParameters[].maxValue">								$rangeSearchParameters[].field$ &gt;= '$rangeSearchParameters[].minValue$'								</isNull>								<isNotNull property="rangeSearchParameters[].maxValue">								$rangeSearchParameters[].field$ between '$rangeSearchParameters[].minValue$' and '$rangeSearchParameters[].maxValue$'								</isNotNull>								</isNotNull>                        </iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql></sqlMap>

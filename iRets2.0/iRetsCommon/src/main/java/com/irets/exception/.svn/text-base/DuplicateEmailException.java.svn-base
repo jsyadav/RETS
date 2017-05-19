@@ -1,0 +1,1 @@
+/** *  */package com.irets.exception;/** * @author iretsigrator.developer * */public class DuplicateEmailException extends Exception {		public DuplicateEmailException() {}		public DuplicateEmailException (String s) {		super(s);	}}

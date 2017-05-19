@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mtgr8_iretsigrator-v2/!svn/ver/59/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader
+END
+SearchPropertyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/59/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/SearchPropertyServlet.java
+END
+TempProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/TempProperties.java
+END
+VersionNumberServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/31/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/VersionNumberServlet.java
+END
+CitiesElemXML.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/CitiesElemXML.java
+END
+ExteriorFeaturesServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/59/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/ExteriorFeaturesServlet.java
+END
+RedirectServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/50/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/RedirectServlet.java
+END
+TempExteriorFeatures.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/TempExteriorFeatures.java
+END
+TempProp.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/TempProp.java
+END
+CityServletJSON.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/CityServletJSON.java
+END
+JSONSearchPropertyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/JSONSearchPropertyServlet.java
+END
+PhotoViewServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/PhotoViewServlet.java
+END
+CitiesElemJSON.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/CitiesElemJSON.java
+END
+CityServletXML.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsFE/src/main/java/com/irets/datadownloader/CityServletXML.java
+END

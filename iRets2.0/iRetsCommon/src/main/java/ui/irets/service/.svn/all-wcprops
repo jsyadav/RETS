@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mtgr8_iretsigrator-v2/!svn/ver/53/iRets2.0/iRetsCommon/src/main/java/ui/irets/service
+END
+JacksonJSONHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/JacksonJSONHelper.java
+END
+JAXBHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/JAXBHelper.java
+END
+GSONHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/ui/irets/service/GSONHelper.java
+END

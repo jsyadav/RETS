@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Common">
+<!--
+    Reusable SQL order by. Parameter class for query should have property
+    List<SortingParameter> sortingOrder. Each element of list has field 'property' containing column name
+    and field 'ascending' indicating sorting order.
+    Usage Example:  
+    <select id="searchForAllUrls" parameterClass="UrlSearchCriteria" resultMap="UrlItemResult">
+        select * from URL_ITEMS where URL like #searchString# and LIST_ID = #listId#
+        <include refid="order"/>
+        LIMIT #startIndex#,#pageSize#
+    </select>
+-->
+    <sql id="order">
+        <dynamic>
+            <isPropertyAvailable property="sortingOrder">
+                <isNotNull property="sortingOrder">
+                    <isNotEmpty property="sortingOrder">
+                        <iterate open="order by" conjunction="," property="sortingOrder">
+                            $sortingOrder[].property$
+                            <isEqual property="sortingOrder[].ascending" compareValue="true">
+                                ASC
+                            </isEqual>
+                            <isEqual property="sortingOrder[].ascending" compareValue="false">
+                                DESC
+                            </isEqual>
+                        </iterate>
+                    </isNotEmpty>
+                </isNotNull>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>
+    <sql id="searchExactLikeOr">
+        <dynamic>
+            <isPropertyAvailable property="searchInProperties">
+                <isPropertyAvailable property="searchString">
+                    <isNotNull property="searchInProperties">
+                        <isNotNull property="searchString">
+                            <isNotEmpty property="searchInProperties">
+                                <iterate open="AND (" conjunction=" OR " property="searchInProperties" close=")">
+                                    $searchInProperties[]$ LIKE #searchString#
+                                </iterate>
+                            </isNotEmpty>
+                        </isNotNull>
+                    </isNotNull>
+                </isPropertyAvailable>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>
+    <sql id="searchExactLikeAnd">        <dynamic>            <isPropertyAvailable property="exactSearchParameters">                <isNotNull property="exactSearchParameters">                    <isNotEmpty property="exactSearchParameters">                        <iterate open="and " conjunction="and" property="searchParameters">                            $exactSearchParameters[].field$ like '$exactSearchParameters[].value$'                        </iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql>    	<sql id="searchWildLikeAnd">
+        <dynamic>
+            <isPropertyAvailable property="searchParameters">
+                <isNotNull property="searchParameters">
+                    <isNotEmpty property="searchParameters">
+                        <iterate open="and " conjunction="and" property="searchParameters">
+                            $searchParameters[].field$ like '%$searchParameters[].value$%'
+                        </iterate>
+                    </isNotEmpty>
+                </isNotNull>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>
+		<sql id="searchIn">        <dynamic>            <isPropertyAvailable property="searchForFieldItemsParameters">                <isNotNull property="searchForFieldItemsParameters">                    <isNotEmpty property="searchForFieldItemsParameters">                        <iterate open="and " conjunction="and" property="searchForFieldItemsParameters">                            $searchForFieldItemsParameters[].field$ in ($searchForFieldItemsParameters[].value$)                        </iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql>	<sql id="searchForZip">        <dynamic>             <isPropertyAvailable property="searchZipParameters">                <isNotNull property="searchZipParameters">                    <isNotEmpty property="searchZipParameters">						<iterate open="and zipCode in(" conjunction="," close=")" property="searchZipParameters">							'$searchZipParameters[].value$'						</iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql>    
+    <sql id="searchWildLikeOr">
+        <dynamic>
+            <isPropertyAvailable property="keywordSearchParameters">
+                <isNotNull property="keywordSearchParameters">
+                    <isNotEmpty property="keywordSearchParameters">
+                        <iterate open="and (" conjunction="or" property="keywordSearchParameters" close=")">
+                            $keywordSearchParameters[].field$ like '%$keywordSearchParameters[].value$%'
+                        </iterate>
+                    </isNotEmpty>
+                </isNotNull>
+            </isPropertyAvailable>
+        </dynamic>
+    </sql>
+		<sql id="rangeSearch">        <dynamic>            <isPropertyAvailable property="rangeSearchParameters">                <isNotNull property="rangeSearchParameters">                    <isNotEmpty property="rangeSearchParameters">                        <iterate open="and (" conjunction="and" property="rangeSearchParameters" close=")">                        	<isNull property="rangeSearchParameters[].minValue">                        		<isNotNull property="rangeSearchParameters[].maxValue">								$rangeSearchParameters[].field$ &lt; '$rangeSearchParameters[].maxValue$'								</isNotNull>							</isNull>							<isNotNull property="rangeSearchParameters[].minValue">								<isNull property="rangeSearchParameters[].maxValue">								$rangeSearchParameters[].field$ &gt; '$rangeSearchParameters[].minValue$'								</isNull>								<isNotNull property="rangeSearchParameters[].maxValue">								$rangeSearchParameters[].field$ between '$rangeSearchParameters[].minValue$' and '$rangeSearchParameters[].maxValue$'								</isNotNull>								</isNotNull>                        </iterate>                    </isNotEmpty>                </isNotNull>            </isPropertyAvailable>        </dynamic>    </sql></sqlMap>

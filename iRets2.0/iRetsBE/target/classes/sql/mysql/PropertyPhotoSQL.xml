@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="PropertyPhoto">
+
+    <!-- Use type aliases to avoid typing the full class name every time. -->
+    <typeAlias alias="PropertyPhoto" type="com.irets.bl.domain.PropertyPhoto"/>
+	<typeAlias alias="SearchParam" type="ui.irets.service.unifiedsr.SearchParam"/>
+	<typeAlias alias="FilterItem" type="ui.irets.service.unifiedsr.FilterItem"/>
+
+    <resultMap id="PropertyPhotoResult" class="PropertyPhoto">
+        <result property="id" column="id"/>
+        <result property="property_id" column="property_id"/>
+        <result property="photo" column="photo"/>
+        <result property="mls_number" column="mls_number"/>
+		<result property="hashcode" column="hashcode"/>
+    </resultMap>
+
+
+    <select id="getPropertyPhotoCount" resultClass="long">
+    	select count(*) from property_photo 
+    </select>
+	
+	<select id="getPropertyPhotoCountForProperty" parameterClass="string" resultClass="long">
+    	select count(*) from property_photo where property_id=#id_Property#
+    </select>
+
+    <select id="getPropertyPhotos" resultMap="PropertyPhotoResult">
+    	select *
+    	from property_photo
+    </select>
+	
+
+	<select id="getPropertyPhoto" parameterClass="string" resultMap="PropertyPhotoResult">
+    	select * from property_photo where property_id = #property_id#
+    </select>
+
+	<select id="getPhotoIdByPropertyId" parameterClass="string" resultClass="long">
+    	select id from property_photo where property_id=#id_Property# order by id
+    </select>
+
+	<select id="getPhotoById" parameterClass="long" resultMap="PropertyPhotoResult">
+    	select * from property_photo where id = #id#
+    </select>
+
+
+    <insert id="insertPropertyPhoto">
+        insert into property_photo (
+    property_id,
+    photo,
+    hashcode,
+    mls_number
+)
+values (
+    #property_id#,
+    #photo#,
+    #hashcode#,
+    #mls_number#
+)
+    </insert>
+
+    <update id="updatePropertyPhoto">
+    	update property_photo set property_id=#property_id#,
+    photo=#photo#,
+    hashcode=#hashcode#,
+    mls_number=#mls_number#
+    	where property_id = #property_id#
+    </update>
+
+    <delete id="deletePropertyPhoto" parameterClass="string">
+        delete from property_photo where property_id = #property_id#
+    </delete>
+	
+	<select id="getPhotoForPropertyWithHash" parameterClass="FilterItem" resultMap="PropertyPhotoResult">
+    	select * from property_photo where property_id = #field# and hashcode=#value#
+    </select> 
+	
+</sqlMap>

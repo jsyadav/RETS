@@ -1,0 +1,48 @@
+#wget 'http://localhost:8080/SearchLocalProperties.xml?apikey=&Zip=93906&limit=20'
+
+#wget 'http://173.204.83.210/imls/SearchLocalProperties.xml?apikey=&Zip=95014&limit=20&ListingId=1005989'
+
+wget 'http://localhost:8080/SearchLocalProperties.xml?apikey=&Zip=95014&limit=20&ListingId=81057474'
+
+
+
+#time wget 'http://173.204.83.210/imls/SearchLocalProperties.xml?apikey=&ListingId=81106342'
+
+#time wget 'http://localhost:8080/SearchLocalProperties.xml?ListingId=81057474'
+
+# (one or more listing id's separated by comma)
+#wget 'http://localhost:8080/SearchLocalProperties.xml?apikey=&ListingId=81106342' 
+#wget 'http://localhost:8080/SearchLocalProperties.xml?limit=15' 
+ 
+#(one or more zip codes) 
+#wget 'http://localhost:8080/SearchLocalProperties.xml?limit=27&Zip=95014&offset=2'
+#wget 'http://localhost:8080/SearchLocalProperties.xml?Zip=95014&offset20'
+#wget 'http://localhost:8080/SearchLocalProperties.xml?City=CU'
+
+#wget 'http://localhost:8080/SearchLocalProperties.xml?limit=21&ExteriorFeatures=Attached%20Single%20Family&Zip=95014'
+
+ 
+#wget 'http://localhost:8080/SearchLocalProperties.xml?apikey=&limit=10&sort=ListPrice&sort_direction=ASC&Status=A&ListPrice=500000%2B&Bedrooms=2.900000:5.100000&FullBathrooms=4.100000-&ExteriorFeatures=detached%20single%20family&Zip=95014,9505'
+
+
+
+#time  wget 'http://localhost:8080/SearchLocalProperties.xml'
+#time  wget 'http://localhost:8080/SearchLocalProperties/exteriorfeatures.xml'
+#time  wget 'http://localhost:8080/SearchLocalProperties.xml?Zip=95014&limit=2'
+#time  wget 'http://localhost:8080/SearchLocalProperties.xml?ListPrice=No%20Min-No%20Max&limit=30'
+#
+#
+#
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#time  wget 'http://localhost/SearchLocalProperties.xml'
+#####
+#time  wget 'http://localhost:8080/SearchLocalProperties.xml'
+#time  wget 'http://localhost:8080/SearchLocalProperties.xml'
+#time  wget 'http://localhost:8080/SearchLocalProperties.xml'
+#time  wget 'http://localhost:8080/version'

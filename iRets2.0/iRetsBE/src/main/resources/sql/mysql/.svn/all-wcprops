@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mtgr8_iretsigrator-v2/!svn/ver/59/iRets2.0/iRetsBE/src/main/resources/sql/mysql
+END
+PropertyPhotoDDL.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mtgr8_iretsigrator-v2/!svn/ver/29/iRets2.0/iRetsBE/src/main/resources/sql/mysql/PropertyPhotoDDL.sql
+END
+PropertyGeoDDL.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/sql/mysql/PropertyGeoDDL.sql
+END
+CommonSQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mtgr8_iretsigrator-v2/!svn/ver/52/iRets2.0/iRetsBE/src/main/resources/sql/mysql/CommonSQL.xml
+END
+ResidentialPropertySQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mtgr8_iretsigrator-v2/!svn/ver/59/iRets2.0/iRetsBE/src/main/resources/sql/mysql/ResidentialPropertySQL.xml
+END
+QuartzDDL.sql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mtgr8_iretsigrator-v2/!svn/ver/15/iRets2.0/iRetsBE/src/main/resources/sql/mysql/QuartzDDL.sql
+END
+PropertyOpenHouseSQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mtgr8_iretsigrator-v2/!svn/ver/58/iRets2.0/iRetsBE/src/main/resources/sql/mysql/PropertyOpenHouseSQL.xml
+END
+ResidentialPropertyDDL.sql
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mtgr8_iretsigrator-v2/!svn/ver/54/iRets2.0/iRetsBE/src/main/resources/sql/mysql/ResidentialPropertyDDL.sql
+END
+PropertyOpenHouseDDL.sql
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mtgr8_iretsigrator-v2/!svn/ver/29/iRets2.0/iRetsBE/src/main/resources/sql/mysql/PropertyOpenHouseDDL.sql
+END
+PropertyPhotoSQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/sql/mysql/PropertyPhotoSQL.xml
+END
+PropertyGeoSQL.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/sql/mysql/PropertyGeoSQL.xml
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib
+END
+AttrGenericText.class
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrGenericText.class
+END
+AttrNumeric.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrNumeric.class
+END
+AttrEnum.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrEnum.class
+END
+AttrText.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrText.class
+END
+AttrAlphanum.class
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrAlphanum.class
+END
+AttrNumericPositive.class
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrNumericPositive.class
+END
+AttrVersion.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrVersion.class
+END
+AttrAbstractText.class
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrAbstractText.class
+END
+AttrPlaintext.class
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrPlaintext.class
+END
+AttrDate.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrDate.class
+END
+AttrBoolean.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/attrib/AttrBoolean.class
+END

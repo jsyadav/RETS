@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client
+END
+InvalidReplyCodeException.class
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/InvalidReplyCodeException.class
+END
+RetsHttpClient.class
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsHttpClient.class
+END
+GetObjectIterator.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/GetObjectIterator.class
+END
+LoginRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/LoginRequest.class
+END
+ChangePasswordRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/ChangePasswordRequest.class
+END
+RetsSession.class
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsSession.class
+END
+StreamingThread.class
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/StreamingThread.class
+END
+RetsVersion.class
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsVersion.class
+END
+ReplyCodeHandler.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/ReplyCodeHandler.class
+END
+GenericHttpRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/GenericHttpRequest.class
+END
+BrokerCodeRequredException.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/BrokerCodeRequredException.class
+END
+LoginResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/LoginResponse.class
+END
+CapabilityUrls.class
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/CapabilityUrls.class
+END
+ChangePasswordResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/ChangePasswordResponse.class
+END
+LogoutResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/LogoutResponse.class
+END
+GetMetadataRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/GetMetadataRequest.class
+END
+RetsTransport.class
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsTransport.class
+END
+InvalidReplyCodeHandler.class
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/InvalidReplyCodeHandler.class
+END
+RetsHttpResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsHttpResponse.class
+END
+NullNetworkEventMonitor.class
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/NullNetworkEventMonitor.class
+END
+MetaCollectorAdapter.class
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/MetaCollectorAdapter.class
+END
+GetMetadataResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/GetMetadataResponse.class
+END
+SearchResultHandler.class
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchResultHandler.class
+END
+NetworkEventMonitor.class
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/NetworkEventMonitor.class
+END
+metadata_tables.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/metadata_tables.xml
+END
+RetsUtil.class
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsUtil.class
+END
+SearchResultCollector.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchResultCollector.class
+END
+NonMultipartGetObjectResponseIterator.class
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/NonMultipartGetObjectResponseIterator.class
+END
+SearchRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchRequest.class
+END
+StreamingSearchResult.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/StreamingSearchResult.class
+END
+StreamingSearchResultProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/StreamingSearchResultProcessor.class
+END
+MetaCollectorImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/MetaCollectorImpl.class
+END
+GetObjectRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/GetObjectRequest.class
+END
+VersionInsensitiveRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/VersionInsensitiveRequest.class
+END
+SearchResultInfo.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchResultInfo.class
+END
+SearchResultSet.class
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchResultSet.class
+END
+LogoutRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/LogoutRequest.class
+END
+GetObjectResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/GetObjectResponse.class
+END
+ReplyCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/ReplyCode.class
+END
+RetsHttpRequest.class
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsHttpRequest.class
+END
+SearchResultImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchResultImpl.class
+END
+SingleObjectResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SingleObjectResponse.class
+END
+CollectionOfCollectionsIterator.class
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/CollectionOfCollectionsIterator.class
+END
+CommonsHttpClientResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/CommonsHttpClientResponse.class
+END
+RetsException.class
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/RetsException.class
+END
+CompactRowPolicy.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/CompactRowPolicy.class
+END
+GetObjectResponseIterator.class
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/GetObjectResponseIterator.class
+END
+KeyValueResponse.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/KeyValueResponse.class
+END
+SearchResult.class
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchResult.class
+END
+SearchResultProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SearchResultProcessor.class
+END
+SinglePartInputStream.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/SinglePartInputStream.class
+END
+InvalidArgumentException.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/InvalidArgumentException.class
+END
+InvalidHttpStatusException.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/InvalidHttpStatusException.class
+END
+CommonsHttpClient.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/client/CommonsHttpClient.class
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata
+END
+AttrType.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/AttrType.class
+END
+CacheKey.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/CacheKey.class
+END
+MetaCollector.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/MetaCollector.class
+END
+MetaObject.class
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/MetaObject.class
+END
+MetadataException.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/MetadataException.class
+END
+MetaParseException.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/MetaParseException.class
+END
+Metadata.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/Metadata.class
+END
+JDomStandardBuilder.class
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/JDomStandardBuilder.class
+END
+MetadataType.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/MetadataType.class
+END
+JDomCompactBuilder.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/JDomCompactBuilder.class
+END
+MetadataBuilder.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/org/realtors/rets/common/metadata/MetadataBuilder.class
+END

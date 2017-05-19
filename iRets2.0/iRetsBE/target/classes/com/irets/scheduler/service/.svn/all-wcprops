@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/com/irets/scheduler/service
+END
+SchedulerServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/com/irets/scheduler/service/SchedulerServices.java
+END
+DataUpdaterJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/com/irets/scheduler/service/DataUpdaterJob.java
+END
+PhotoUpdaterJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/com/irets/scheduler/service/PhotoUpdaterJob.java
+END
+ISchedulerServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/com/irets/scheduler/service/ISchedulerServices.java
+END
+FullDataFetcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/java/com/irets/scheduler/service/FullDataFetcher.java
+END

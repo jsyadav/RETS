@@ -1,0 +1,1 @@
+db.name=mlsDB_test#db.host=10.131.46.6db.host=localhostjdbc.driverClassName=com.mysql.jdbc.Driverjdbc.url.prefix=jdbc:mysql://#jdbc.url=jdbc:mysql://10.131.46.2/mlsDB_test#jdbc.url=jdbc:mysql://localhost/mlsDB_testjdbc.username=rootjdbc.password=mysql

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mtgr8_iretsigrator-v2/!svn/ver/59/iRets2.0/iRetsBE/src/main/resources
+END
+applicationContext-resources.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/applicationContext-resources.xml
+END
+webdefault.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/webdefault.xml
+END
+SqlMapConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mtgr8_iretsigrator-v2/!svn/ver/16/iRets2.0/iRetsBE/src/main/resources/SqlMapConfig.xml
+END
+applicationContext-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/applicationContext-service.xml
+END
+applicationContext-dao.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/applicationContext-dao.xml
+END
+applicationContext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/resources/applicationContext-security.xml
+END

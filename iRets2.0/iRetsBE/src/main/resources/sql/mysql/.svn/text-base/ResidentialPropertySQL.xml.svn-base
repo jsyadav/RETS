@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ResidentialProperty">
+
+    <!-- Use type aliases to avoid typing the full class name every time. -->
+    <typeAlias alias="ResidentialProperty" type="com.irets.bl.domain.ResidentialProperty"/>
+	<typeAlias alias="SearchParam" type="ui.irets.service.unifiedsr.SearchParam"/>
+
+    <resultMap id="ResidentialPropertyResult" class="ResidentialProperty">
+        <result property="id" column="id"/>
+        <result property="description_Bedroom" column="description_Bedroom"/>
+        <result property="suffix_Street_Direction" column="suffix_Street_Direction"/>
+        <result property="name_First_Listing_Agent" column="name_First_Listing_Agent"/>
+        <result property="_long" column="_long"/>
+        <result property="zipCode" column="zipCode"/>
+        <result property="barclay_Vertical" column="barclay_Vertical"/>
+        <result property="name_Co_Listing_Agent" column="name_Co_Listing_Agent"/>
+        <result property="desc_Pool" column="desc_Pool"/>
+        <result property="source_Year_Built" column="source_Year_Built"/>
+        <result property="name_Last_Listing_agent" column="name_Last_Listing_agent"/>
+        <result property="number_Lic_Listing_Agent" column="number_Lic_Listing_Agent"/>
+        <result property="number_Parcel" column="number_Parcel"/>
+        <result property="date_Orig_Tour" column="date_Orig_Tour"/>
+        <result property="phone_Occupant" column="phone_Occupant"/>
+        <result property="date_Off_Market" column="date_Off_Market"/>
+        <result property="features_Disability" column="features_Disability"/>
+        <result property="date_Original_List" column="date_Original_List"/>
+        <result property="name_Owner" column="name_Owner"/>
+        <result property="type_Occupant" column="type_Occupant"/>
+        <result property="last_Name_Sales_Agent" column="last_Name_Sales_Agent"/>
+        <result property="status_Listing" column="status_Listing"/>
+        <result property="thomas_Bros_Grid" column="thomas_Bros_Grid"/>
+        <result property="www_Virtual_Tour" column="www_Virtual_Tour"/>
+        <result property="name_High_School" column="name_High_School"/>
+        <result property="range_Lot_Size" column="range_Lot_Size"/>
+        <result property="year_Built" column="year_Built"/>
+        <result property="remarks_Public" column="remarks_Public"/>
+        <result property="name_City" column="name_City"/>
+        <result property="sewer" column="sewer"/>
+        <result property="www_Caption" column="www_Caption"/>
+        <result property="price_List" column="price_List"/>
+        <result property="lat" column="lat"/>
+        <result property="name_Association" column="name_Association"/>
+        <result property="pool_Y_N" column="pool_Y_N"/>
+        <result property="barclayPageNum" column="barclayPageNum"/>
+        <result property="thomas_Bros_Page" column="thomas_Bros_Page"/>
+        <result property="type_Community" column="type_Community"/>
+        <result property="name_Builder" column="name_Builder"/>
+        <result property="address_Filtered" column="address_Filtered"/>
+        <result property="desc_Yard" column="desc_Yard"/>
+        <result property="zone" column="zone"/>
+        <result property="name_Middle_School" column="name_Middle_School"/>
+        <result property="fax_Listing_Office" column="fax_Listing_Office"/>
+        <result property="name_Country" column="name_Country"/>
+        <result property="name_High_School_Dist" column="name_High_School_Dist"/>
+        <result property="amenities" column="amenities"/>
+        <result property="date_Listing_Expiration" column="date_Listing_Expiration"/>
+        <result property="www_raw_Virtual_Tour" column="www_raw_Virtual_Tour"/>
+        <result property="size_Lot" column="size_Lot"/>
+        <result property="name_Middle_Listing_Agent" column="name_Middle_Listing_Agent"/>
+        <result property="name_Selling_Agent" column="name_Selling_Agent"/>
+        <result property="info_Warranty" column="info_Warranty"/>
+        <result property="name_Listing_Agent" column="name_Listing_Agent"/>
+        <result property="unit_Lot_Size" column="unit_Lot_Size"/>
+        <result property="designator_Street" column="designator_Street"/>
+        <result property="info_Special" column="info_Special"/>
+        <result property="date_Escrow_Close" column="date_Escrow_Close"/>
+        <result property="name_Listing_Office" column="name_Listing_Office"/>
+        <result property="remarks_Tour" column="remarks_Tour"/>
+        <result property="zipCode_Postal" column="zipCode_Postal"/>
+        <result property="sqft_Structure" column="sqft_Structure"/>
+        <result property="fee_Association" column="fee_Association"/>
+        <result property="number_beds_Total" column="number_beds_Total"/>
+        <result property="date_Change_Status" column="date_Change_Status"/>
+        <result property="date_Listing_Modification" column="date_Listing_Modification"/>
+        <result property="date_First_Tour_Open_House" column="date_First_Tour_Open_House"/>
+        <result property="parking_Garage" column="parking_Garage"/>
+        <result property="date_Second_Tour_Open_House" column="date_Second_Tour_Open_House"/>
+        <result property="barclay_Horizontal" column="barclay_Horizontal"/>
+        <result property="www_Listing" column="www_Listing"/>
+        <result property="lat_BN" column="lat_BN"/>
+        <result property="options_Pool" column="options_Pool"/>
+        <result property="remarks_General" column="remarks_General"/>
+        <result property="www_Disclosure" column="www_Disclosure"/>
+        <result property="commission_Selling_Agent" column="commission_Selling_Agent"/>
+        <result property="age_Property" column="age_Property"/>
+        <result property="fax_Listing_Agent" column="fax_Listing_Agent"/>
+        <result property="spa_Sauna" column="spa_Sauna"/>
+        <result property="name_Elementry" column="name_Elementry"/>
+        <result property="list_www" column="list_www"/>
+        <result property="www_Comments" column="www_Comments"/>
+        <result property="key" column="akey"/>
+        <result property="range_Bed" column="range_Bed"/>
+        <result property="directions" column="directions"/>
+        <result property="instructions_Photo" column="instructions_Photo"/>
+        <result property="info_Additional_Listing" column="info_Additional_Listing"/>
+        <result property="name_New_City" column="name_New_City"/>
+        <result property="showers" column="showers"/>
+        <result property="phone_Association" column="phone_Association"/>
+        <result property="id_Property" column="id_Property"/>
+        <result property="name_County" column="name_County"/>
+        <result property="instructions_Show" column="instructions_Show"/>
+        <result property="number_baths_Full" column="number_baths_Full"/>
+        <result property="number_Lic_Listing_Broker" column="number_Lic_Listing_Broker"/>
+        <result property="lotsize_Source" column="lotsize_Source"/>
+        <result property="name_Occupant" column="name_Occupant"/>
+        <result property="room_Family" column="room_Family"/>
+        <result property="price_List_Original" column="price_List_Original"/>
+        <result property="name_Selling_Office" column="name_Selling_Office"/>
+        <result property="date_List" column="date_List"/>
+        <result property="view" column="aview"/>
+        <result property="name_Tract" column="name_Tract"/>
+        <result property="number_baths_Total" column="number_baths_Total"/>
+        <result property="phone_Listing_Agent_Pri" column="phone_Listing_Agent_Pri"/>
+        <result property="count_Photo" column="count_Photo"/>
+        <result property="type_Property" column="type_Property"/>
+        <result property="range_Bath" column="range_Bath"/>
+        <result property="tub" column="tub"/>
+        <result property="long_BN" column="long_BN"/>
+        <result property="number_Street" column="number_Street"/>
+        <result property="date_Closed" column="date_Closed"/>
+        <result property="suffix_Street" column="suffix_Street"/>
+        <result property="cross_Street" column="cross_Street"/>
+        <result property="number_baths_Half" column="number_baths_Half"/>
+        <result property="class_Property" column="class_Property"/>
+        <result property="type_Listing" column="type_Listing"/>
+        <result property="password_Disclosure" column="password_Disclosure"/>
+        <result property="number_Stories" column="number_Stories"/>
+        <result property="name_School_District" column="name_School_District"/>
+        <result property="style_Property" column="style_Property"/>
+        <result property="description_Lot" column="description_Lot"/>
+        <result property="name_Street" column="name_Street"/>
+        <result property="name_Listing_Broker" column="name_Listing_Broker"/>
+        <result property="direction_Street" column="direction_Street"/>
+        <result property="phone_Listing_Office" column="phone_Listing_Office"/>
+        <result property="state" column="state"/>
+        <result property="name_User_Disclosure" column="name_User_Disclosure"/>
+        <result property="number_MLS" column="number_MLS"/>
+		<result property="verified_last_sync" column="verified_last_sync"/>
+        <result property="actual_count_Photo" column="actual_count_Photo"/>
+        
+
+        <result property="list_team_agent_dres" column="list_team_agent_dres"/>
+        <result property="foundation" column="foundation"/>
+        <result property="other_rooms" column="other_rooms"/>
+        <result property="listing_license_number" column="listing_license_number"/>
+        <result property="horse_prop_desc" column="horse_prop_desc"/>
+        <result property="baths_half" column="baths_half"/>
+        <result property="public_remarks" column="public_remarks"/>
+        <result property="other_areas" column="other_areas"/>
+        <result property="exterior_features" column="exterior_features"/>
+        <result property="pool" column="pool"/>
+        <result property="pool_options" column="pool_options"/>
+        <result property="property_energy_information" column="property_energy_information"/>
+        <result property="has_pool" column="has_pool"/>
+        <result property="cooling" column="cooling"/>
+        <result property="property_age" column="property_age"/>
+        <result property="heating" column="heating"/>
+        <result property="has_fire_places" column="has_fire_places"/>
+        <result property="roof" column="roof"/>
+        <result property="yard_grounds" column="yard_grounds"/>
+        <result property="bathrooom_features" column="bathrooom_features"/>
+        <result property="city_unioncorporated" column="city_unioncorporated"/>
+        <result property="fire_place_details" column="fire_place_details"/>
+        <result property="formal_dining_room" column="formal_dining_room"/>
+        <result property="property_disability_features" column="property_disability_features"/>
+        <result property="property_inclusions" column="property_inclusions"/>
+        <result property="stories" column="stories"/>
+        <result property="insulation" column="insulation"/>
+        <result property="sewer_septic" column="sewer_septic"/>
+        <result property="in_formal_dining_room" column="in_formal_dining_room"/>
+        <result property="floor_covering" column="floor_covering"/>
+        <result property="association_fee" column="association_fee"/>
+        <result property="listing_area_code" column="listing_area_code"/>
+        <result property="horse_prop" column="horse_prop"/>
+        <result property="city_limits" column="city_limits"/>
+        <result property="lot_size_area_units" column="lot_size_area_units"/>
+        <result property="family_room" column="family_room"/>
+        <result property="property_hot_tub" column="property_hot_tub"/>
+        <result property="virtual_tour_link" column="virtual_tour_link"/>
+        <result property="unbranded_virtual_tour_link" column="unbranded_virtual_tour_link"/>
+        <result property="fireplace_location" column="fireplace_location"/>
+        <result property="bedroom_description" column="bedroom_description"/>
+        <result property="lot_description" column="lot_description"/>
+        <result property="shower_tub" column="shower_tub"/>
+        <result property="water" column="water"/>
+        <result property="levels" column="levels"/>
+        <result property="association_fee_includes" column="association_fee_includes"/>
+        <result property="community_community_name" column="community_community_name"/>
+        <result property="total_units" column="total_units"/>
+        <result property="unit_location" column="unit_location"/>
+        <result property="complex_features" column="complex_features"/>
+        <result property="tract_name" column="tract_name"/>
+        <result property="unit_description" column="unit_description"/>
+        <result property="parking_total" column="parking_total"/>
+        <result property="number_units" column="number_units"/>
+        <result property="date_photo_modification" column="date_photo_modification"/>
+        <result property="vow_awm" column="vow_awm"/>
+        <result property="new_listing_id" column="new_listing_id"/>
+        <result property="close_price" column="close_price"/>
+        <result property="listing_branch_num" column="listing_branch_num"/>
+        <result property="vow_comm" column="vow_comm"/>
+        <result property="ble_opt_in" column="ble_opt_in"/>
+        <result property="date_revision" column="date_revision"/>
+        <result property="server" column="server"/>
+        
+    </resultMap>
+
+    <select id="getResidentialPropertyCount" resultClass="long">
+    	select count(*) from residential_property 
+    </select>
+
+    <select id="getResidentialPropertys" resultMap="ResidentialPropertyResult">
+    	select *
+    	from residential_property
+    </select>
+
+    <select id="getResidentialProperty" parameterClass="string" resultMap="ResidentialPropertyResult">
+    	select * from residential_property where id_Property = #id_Property#
+    </select>
+
+    <select id="getResidentialPropertyByMlsId" parameterClass="string" resultMap="ResidentialPropertyResult">
+    	select * from residential_property where number_MLS = #number_MLS#
+    </select>
+
+	<select id="getExteriorFeatures" resultClass="string">
+    	select distinct type_property from residential_property
+    </select>
+
+    <insert id="insertResidentialProperty">
+        insert into residential_property (
+    description_Bedroom,
+    suffix_Street_Direction,
+    name_First_Listing_Agent,
+    _long,
+    zipCode,
+    barclay_Vertical,
+    name_Co_Listing_Agent,
+    desc_Pool,
+    source_Year_Built,
+    name_Last_Listing_agent,
+    number_Lic_Listing_Agent,
+    number_Parcel,
+    date_Orig_Tour,
+    phone_Occupant,
+    date_Off_Market,
+    features_Disability,
+    date_Original_List,
+    name_Owner,
+    type_Occupant,
+    last_Name_Sales_Agent,
+    status_Listing,
+    thomas_Bros_Grid,
+    www_Virtual_Tour,
+    name_High_School,
+    range_Lot_Size,
+    year_Built,
+    remarks_Public,
+    name_City,
+    sewer,
+    www_Caption,
+    price_List,
+    lat,
+    name_Association,
+    pool_Y_N,
+    barclayPageNum,
+    thomas_Bros_Page,
+    type_Community,
+    name_Builder,
+    address_Filtered,
+    desc_Yard,
+    zone,
+    name_Middle_School,
+    fax_Listing_Office,
+    name_Country,
+    name_High_School_Dist,
+    amenities,
+    date_Listing_Expiration,
+    www_raw_Virtual_Tour,
+    size_Lot,
+    name_Middle_Listing_Agent,
+    name_Selling_Agent,
+    info_Warranty,
+    name_Listing_Agent,
+    unit_Lot_Size,
+    designator_Street,
+    info_Special,
+    date_Escrow_Close,
+    name_Listing_Office,
+    remarks_Tour,
+    zipCode_Postal,
+    sqft_Structure,
+    fee_Association,
+    number_beds_Total,
+    date_Change_Status,
+    date_Listing_Modification,
+    date_First_Tour_Open_House,
+    parking_Garage,
+    date_Second_Tour_Open_House,
+    barclay_Horizontal,
+    www_Listing,
+    lat_BN,
+    options_Pool,
+    remarks_General,
+    www_Disclosure,
+    commission_Selling_Agent,
+    age_Property,
+    fax_Listing_Agent,
+    spa_Sauna,
+    name_Elementry,
+    list_www,
+    www_Comments,
+    akey,
+    range_Bed,
+    directions,
+    instructions_Photo,
+    info_Additional_Listing,
+    name_New_City,
+    showers,
+    phone_Association,
+    id_Property,
+    name_County,
+    instructions_Show,
+    number_baths_Full,
+    number_Lic_Listing_Broker,
+    lotsize_Source,
+    name_Occupant,
+    room_Family,
+    price_List_Original,
+    name_Selling_Office,
+    date_List,
+    aview,
+    name_Tract,
+    number_baths_Total,
+    phone_Listing_Agent_Pri,
+    count_Photo,
+    type_Property,
+    range_Bath,
+    tub,
+    long_BN,
+    number_Street,
+    date_Closed,
+    suffix_Street,
+    cross_Street,
+    number_baths_Half,
+    class_Property,
+    type_Listing,
+    password_Disclosure,
+    number_Stories,
+    name_School_District,
+    style_Property,
+    description_Lot,
+    name_Street,
+    name_Listing_Broker,
+    direction_Street,
+    phone_Listing_Office,
+    state,
+    name_User_Disclosure,
+    number_MLS,
+    actual_count_Photo,
+	verified_last_sync,
+	list_team_agent_dres,
+	foundation,
+	other_rooms,
+	listing_license_number,
+	horse_prop_desc,
+	baths_half,
+	public_remarks,
+	other_areas,
+	exterior_features,
+	pool,
+	pool_options,
+	property_energy_information,
+	has_pool,
+	cooling,
+	property_age,
+	heating,
+	has_fire_places,
+	roof,
+	yard_grounds,
+	bathrooom_features,
+	city_unioncorporated,
+	fire_place_details,
+	formal_dining_room,
+	property_disability_features,
+	property_inclusions,
+	stories,
+	insulation,
+	sewer_septic,
+	in_formal_dining_room,
+	floor_covering,
+	association_fee,
+	listing_area_code,
+	horse_prop,
+	city_limits,
+	lot_size_area_units,
+	family_room,
+	property_hot_tub,
+	virtual_tour_link,
+	unbranded_virtual_tour_link,
+	fireplace_location,
+	bedroom_description,
+	lot_description,
+	shower_tub,
+	water,
+	levels,
+	association_fee_includes,
+	community_community_name,
+	total_units,
+	unit_location,
+	complex_features,
+	tract_name,
+	unit_description,
+	parking_total,
+	number_units,
+	date_photo_modification,
+	vow_awm,
+	new_listing_id,
+	close_price,
+	listing_branch_num,
+	vow_comm,
+	ble_opt_in,
+	date_revision,
+	server	
+	
+)
+values (
+    #description_Bedroom#,
+    #suffix_Street_Direction#,
+    #name_First_Listing_Agent#,
+    #_long#,
+    #zipCode#,
+    #barclay_Vertical#,
+    #name_Co_Listing_Agent#,
+    #desc_Pool#,
+    #source_Year_Built#,
+    #name_Last_Listing_agent#,
+    #number_Lic_Listing_Agent#,
+    #number_Parcel#,
+    #date_Orig_Tour#,
+    #phone_Occupant#,
+    #date_Off_Market#,
+    #features_Disability#,
+    #date_Original_List#,
+    #name_Owner#,
+    #type_Occupant#,
+    #last_Name_Sales_Agent#,
+    #status_Listing#,
+    #thomas_Bros_Grid#,
+    #www_Virtual_Tour#,
+    #name_High_School#,
+    #range_Lot_Size#,
+    #year_Built#,
+    #remarks_Public#,
+    #name_City#,
+    #sewer#,
+    #www_Caption#,
+    #price_List#,
+    #lat#,
+    #name_Association#,
+    #pool_Y_N#,
+    #barclayPageNum#,
+    #thomas_Bros_Page#,
+    #type_Community#,
+    #name_Builder#,
+    #address_Filtered#,
+    #desc_Yard#,
+    #zone#,
+    #name_Middle_School#,
+    #fax_Listing_Office#,
+    #name_Country#,
+    #name_High_School_Dist#,
+    #amenities#,
+    #date_Listing_Expiration#,
+    #www_raw_Virtual_Tour#,
+    #size_Lot#,
+    #name_Middle_Listing_Agent#,
+    #name_Selling_Agent#,
+    #info_Warranty#,
+    #name_Listing_Agent#,
+    #unit_Lot_Size#,
+    #designator_Street#,
+    #info_Special#,
+    #date_Escrow_Close#,
+    #name_Listing_Office#,
+    #remarks_Tour#,
+    #zipCode_Postal#,
+    #sqft_Structure#,
+    #fee_Association#,
+    #number_beds_Total#,
+    #date_Change_Status#,
+    #date_Listing_Modification#,
+    #date_First_Tour_Open_House#,
+    #parking_Garage#,
+    #date_Second_Tour_Open_House#,
+    #barclay_Horizontal#,
+    #www_Listing#,
+    #lat_BN#,
+    #options_Pool#,
+    #remarks_General#,
+    #www_Disclosure#,
+    #commission_Selling_Agent#,
+    #age_Property#,
+    #fax_Listing_Agent#,
+    #spa_Sauna#,
+    #name_Elementry#,
+    #list_www#,
+    #www_Comments#,
+    #key#,
+    #range_Bed#,
+    #directions#,
+    #instructions_Photo#,
+    #info_Additional_Listing#,
+    #name_New_City#,
+    #showers#,
+    #phone_Association#,
+    #id_Property#,
+    #name_County#,
+    #instructions_Show#,
+    #number_baths_Full#,
+    #number_Lic_Listing_Broker#,
+    #lotsize_Source#,
+    #name_Occupant#,
+    #room_Family#,
+    #price_List_Original#,
+    #name_Selling_Office#,
+    #date_List#,
+    #view#,
+    #name_Tract#,
+    #number_baths_Total#,
+    #phone_Listing_Agent_Pri#,
+    #count_Photo#,
+    #type_Property#,
+    #range_Bath#,
+    #tub#,
+    #long_BN#,
+    #number_Street#,
+    #date_Closed#,
+    #suffix_Street#,
+    #cross_Street#,
+    #number_baths_Half#,
+    #class_Property#,
+    #type_Listing#,
+    #password_Disclosure#,
+    #number_Stories#,
+    #name_School_District#,
+    #style_Property#,
+    #description_Lot#,
+    #name_Street#,
+    #name_Listing_Broker#,
+    #direction_Street#,
+    #phone_Listing_Office#,
+    #state#,
+    #name_User_Disclosure#,
+    #number_MLS#,
+    #actual_count_Photo#,
+	#verified_last_sync#,
+	#list_team_agent_dres#,
+	#foundation#,
+	#other_rooms#,
+	#listing_license_number#,
+	#horse_prop_desc#,
+	#baths_half#,
+	#public_remarks#,
+	#other_areas#,
+	#exterior_features#,
+	#pool#,
+	#pool_options#,
+	#property_energy_information#,
+	#has_pool#,
+	#cooling#,
+	#property_age#,
+	#heating#,
+	#has_fire_places#,
+	#roof#,
+	#yard_grounds#,
+	#bathrooom_features#,
+	#city_unioncorporated#,
+	#fire_place_details#,
+	#formal_dining_room#,
+	#property_disability_features#,
+	#property_inclusions#,
+	#stories#,
+	#insulation#,
+	#sewer_septic#,
+	#in_formal_dining_room#,
+	#floor_covering#,
+	#association_fee#,
+	#listing_area_code#,
+	#horse_prop#,
+	#city_limits#,
+	#lot_size_area_units#,
+	#family_room#,
+	#property_hot_tub#,
+	#virtual_tour_link#,
+	#unbranded_virtual_tour_link#,
+	#fireplace_location#,
+	#bedroom_description#,
+	#lot_description#,
+	#shower_tub#,
+	#water#,
+	#levels#,
+	#association_fee_includes#,
+	#community_community_name#,
+	#total_units#,
+	#unit_location#,
+	#complex_features#,
+	#tract_name#,
+	#unit_description#,
+	#parking_total#,
+	#number_units#,
+	#date_photo_modification#,
+	#vow_awm#,
+	#new_listing_id#,
+	#close_price#,
+	#listing_branch_num#,
+	#vow_comm#,
+	#ble_opt_in#,
+	#date_revision#,
+	#server#
+	
+)
+    </insert>
+
+    <update id="updateResidentialProperty">
+    	update residential_property set description_Bedroom=#description_Bedroom#,
+    suffix_Street_Direction=#suffix_Street_Direction#,
+    name_First_Listing_Agent=#name_First_Listing_Agent#,
+    _long=#_long#,
+    zipCode=#zipCode#,
+    barclay_Vertical=#barclay_Vertical#,
+    name_Co_Listing_Agent=#name_Co_Listing_Agent#,
+    desc_Pool=#desc_Pool#,
+    source_Year_Built=#source_Year_Built#,
+    name_Last_Listing_agent=#name_Last_Listing_agent#,
+    number_Lic_Listing_Agent=#number_Lic_Listing_Agent#,
+    number_Parcel=#number_Parcel#,
+    date_Orig_Tour=#date_Orig_Tour#,
+    phone_Occupant=#phone_Occupant#,
+    date_Off_Market=#date_Off_Market#,
+    features_Disability=#features_Disability#,
+    date_Original_List=#date_Original_List#,
+    name_Owner=#name_Owner#,
+    type_Occupant=#type_Occupant#,
+    last_Name_Sales_Agent=#last_Name_Sales_Agent#,
+    status_Listing=#status_Listing#,
+    thomas_Bros_Grid=#thomas_Bros_Grid#,
+    www_Virtual_Tour=#www_Virtual_Tour#,
+    name_High_School=#name_High_School#,
+    range_Lot_Size=#range_Lot_Size#,
+    year_Built=#year_Built#,
+    remarks_Public=#remarks_Public#,
+    name_City=#name_City#,
+    sewer=#sewer#,
+    www_Caption=#www_Caption#,
+    price_List=#price_List#,
+    lat=#lat#,
+    name_Association=#name_Association#,
+    pool_Y_N=#pool_Y_N#,
+    barclayPageNum=#barclayPageNum#,
+    thomas_Bros_Page=#thomas_Bros_Page#,
+    type_Community=#type_Community#,
+    name_Builder=#name_Builder#,
+    address_Filtered=#address_Filtered#,
+    desc_Yard=#desc_Yard#,
+    zone=#zone#,
+    name_Middle_School=#name_Middle_School#,
+    fax_Listing_Office=#fax_Listing_Office#,
+    name_Country=#name_Country#,
+    name_High_School_Dist=#name_High_School_Dist#,
+    amenities=#amenities#,
+    date_Listing_Expiration=#date_Listing_Expiration#,
+    www_raw_Virtual_Tour=#www_raw_Virtual_Tour#,
+    size_Lot=#size_Lot#,
+    name_Middle_Listing_Agent=#name_Middle_Listing_Agent#,
+    name_Selling_Agent=#name_Selling_Agent#,
+    info_Warranty=#info_Warranty#,
+    name_Listing_Agent=#name_Listing_Agent#,
+    unit_Lot_Size=#unit_Lot_Size#,
+    designator_Street=#designator_Street#,
+    info_Special=#info_Special#,
+    date_Escrow_Close=#date_Escrow_Close#,
+    name_Listing_Office=#name_Listing_Office#,
+    remarks_Tour=#remarks_Tour#,
+    zipCode_Postal=#zipCode_Postal#,
+    sqft_Structure=#sqft_Structure#,
+    fee_Association=#fee_Association#,
+    number_beds_Total=#number_beds_Total#,
+    date_Change_Status=#date_Change_Status#,
+    date_Listing_Modification=#date_Listing_Modification#,
+    date_First_Tour_Open_House=#date_First_Tour_Open_House#,
+    parking_Garage=#parking_Garage#,
+    date_Second_Tour_Open_House=#date_Second_Tour_Open_House#,
+    barclay_Horizontal=#barclay_Horizontal#,
+    www_Listing=#www_Listing#,
+    lat_BN=#lat_BN#,
+    options_Pool=#options_Pool#,
+    remarks_General=#remarks_General#,
+    www_Disclosure=#www_Disclosure#,
+    commission_Selling_Agent=#commission_Selling_Agent#,
+    age_Property=#age_Property#,
+    fax_Listing_Agent=#fax_Listing_Agent#,
+    spa_Sauna=#spa_Sauna#,
+    name_Elementry=#name_Elementry#,
+    list_www=#list_www#,
+    www_Comments=#www_Comments#,
+    akey=#key#,
+    range_Bed=#range_Bed#,
+    directions=#directions#,
+    instructions_Photo=#instructions_Photo#,
+    info_Additional_Listing=#info_Additional_Listing#,
+    name_New_City=#name_New_City#,
+    showers=#showers#,
+    phone_Association=#phone_Association#,
+    id_Property=#id_Property#,
+    name_County=#name_County#,
+    instructions_Show=#instructions_Show#,
+    number_baths_Full=#number_baths_Full#,
+    number_Lic_Listing_Broker=#number_Lic_Listing_Broker#,
+    lotsize_Source=#lotsize_Source#,
+    name_Occupant=#name_Occupant#,
+    room_Family=#room_Family#,
+    price_List_Original=#price_List_Original#,
+    name_Selling_Office=#name_Selling_Office#,
+    date_List=#date_List#,
+    aview=#view#,
+    name_Tract=#name_Tract#,
+    number_baths_Total=#number_baths_Total#,
+    phone_Listing_Agent_Pri=#phone_Listing_Agent_Pri#,
+    count_Photo=#count_Photo#,
+    type_Property=#type_Property#,
+    range_Bath=#range_Bath#,
+    tub=#tub#,
+    long_BN=#long_BN#,
+    number_Street=#number_Street#,
+    date_Closed=#date_Closed#,
+    suffix_Street=#suffix_Street#,
+    cross_Street=#cross_Street#,
+    number_baths_Half=#number_baths_Half#,
+    class_Property=#class_Property#,
+    type_Listing=#type_Listing#,
+    password_Disclosure=#password_Disclosure#,
+    number_Stories=#number_Stories#,
+    name_School_District=#name_School_District#,
+    style_Property=#style_Property#,
+    description_Lot=#description_Lot#,
+    name_Street=#name_Street#,
+    name_Listing_Broker=#name_Listing_Broker#,
+    direction_Street=#direction_Street#,
+    phone_Listing_Office=#phone_Listing_Office#,
+    state=#state#,
+    name_User_Disclosure=#name_User_Disclosure#,
+    number_MLS=#number_MLS#,
+    actual_count_Photo=#actual_count_Photo#,
+	verified_last_sync=#verified_last_sync#,
+	list_team_agent_dres=#list_team_agent_dres#,
+	foundation=#foundation#,
+	other_rooms=#other_rooms#,
+	listing_license_number=#listing_license_number#,
+	horse_prop_desc=#horse_prop_desc#,
+	baths_half=#baths_half#,
+	public_remarks=#public_remarks#,
+	other_areas=#other_areas#,
+	exterior_features=#exterior_features#,
+	pool=#pool#,
+	pool_options=#pool_options#,
+	property_energy_information=#property_energy_information#,
+	has_pool=#has_pool#,
+	cooling=#cooling#,
+	property_age=#property_age#,
+	heating=#heating#,
+	has_fire_places=#has_fire_places#,
+	roof=#roof#,
+	yard_grounds=#yard_grounds#,
+	bathrooom_features=#bathrooom_features#,
+	city_unioncorporated=#city_unioncorporated#,
+	fire_place_details=#fire_place_details#,
+	formal_dining_room=#formal_dining_room#,
+	property_disability_features=#property_disability_features#,
+	property_inclusions=#property_inclusions#,
+	stories=#stories#,
+	insulation=#insulation#,
+	sewer_septic=#sewer_septic#,
+	in_formal_dining_room=#in_formal_dining_room#,
+	floor_covering=#floor_covering#,
+	association_fee=#association_fee#,
+	listing_area_code=#listing_area_code#,
+	horse_prop=#horse_prop#,
+	city_limits=#city_limits#,
+	lot_size_area_units=#lot_size_area_units#,
+	family_room=#family_room#,
+	property_hot_tub=#property_hot_tub#,
+	virtual_tour_link=#virtual_tour_link#,
+	unbranded_virtual_tour_link=#unbranded_virtual_tour_link#,
+	fireplace_location=#fireplace_location#,
+	bedroom_description=#bedroom_description#,
+	lot_description=#lot_description#,
+	shower_tub=#shower_tub#,
+	water=#water#,
+	levels=#levels#,
+	association_fee_includes=#association_fee_includes#,
+	community_community_name=#community_community_name#,
+	total_units=#total_units#,
+	unit_location=#unit_location#,
+	complex_features=#complex_features#,
+	tract_name=#tract_name#,
+	unit_description=#unit_description#,
+	parking_total=#parking_total#,
+	number_units=#number_units#,
+	date_photo_modification=#date_photo_modification#,
+	vow_awm=#vow_awm#,
+	new_listing_id=#new_listing_id#,
+	close_price=#close_price#,
+	listing_branch_num=#listing_branch_num#,
+	vow_comm=#vow_comm#,
+	ble_opt_in=#ble_opt_in#,
+	date_revision=#date_revision#,
+	server=#server#
+	
+    	where id_Property = #id_Property#
+    </update>
+
+    <delete id="deleteResidentialProperty" parameterClass="long">
+        delete from residential_property where id_Property = #id_Property#
+    </delete>
+	
+	<!--
+	server="mlsv4"
+	server="bayeast"
+	server="nal_solid_earth"
+    server="bham_solid_earth"
+	 
+	 -->
+	<update id="updateVerifiedLastSync">
+		update residential_property set verified_last_sync=1 where id_Property !=''
+	</update>
+
+    <update id="updateLatLong">
+		update residential_property r,property_geo g set r.lat=g.latitude, r._long=g.longitude where r.id_property=g.property_id
+	</update>
+
+    <update id="updateActualPhotoCount">
+        update residential_property as target
+        inner join (
+        select r.id_property as id_property,count(p.property_id) as photo_count from residential_property r JOIN property_photo p on (r.id_property=p.property_id) group by p.property_id
+        ) as source on target.id_property=source.id_property set target.actual_count_Photo=source.photo_count
+    </update>
+	<!--
+	server="mlsv4"
+	server="bayeast" 
+	server="nal_solid_earth"
+    server="bham_solid_earth"
+	 -->
+	<delete id="purgeOldRecords">
+		delete from residential_property where verified_last_sync = 1
+	</delete>
+
+	<!--
+	server="mlsv4"
+	server="bayeast" 
+	server="nal_solid_earth"
+    server="bham_solid_earth"
+	 -->
+    <select id="updatedPropsCount" resultClass="int">
+		select count(*) from residential_property where verified_last_sync = 2
+	</select>
+
+    <select id="getPropsWithPhotoCount0" resultClass="string">
+    	select r.id_Property
+    	from residential_property r
+    	where actual_count_Photo is null and count_photo &lt;&gt; 0     
+    </select>
+
+    <select id="getAllNonEqualCountPhotos" resultClass="string">
+    	select r.id_Property
+    	from residential_property r
+    	where actual_count_Photo &lt;&gt; count_photo
+    </select>
+	
+	<select id="searchForProperties" parameterClass="SearchParam" resultMap="ResidentialPropertyResult">
+    	select r.*
+    	from residential_property r
+    	where id_Property is not null
+    	<include refid="searchWildLikeAnd"/>
+		<include refid="searchIn"/>
+    	<include refid="searchWildLikeOr"/>
+		<include refid="rangeSearch"/>
+    	<include refid="order"/>        
+    </select>
+    
+    <select id="searchForPropertiesWithOpenHouse" parameterClass="SearchParam" resultMap="ResidentialPropertyResult">
+    	select distinct r.*
+    	from residential_property r, property_openhouse o,
+    	where r.id_Property=o.property_id      	
+    	<include refid="searchWildLikeAnd"/>
+		<include refid="searchIn"/>
+    	<include refid="searchWildLikeOr"/>
+		<include refid="rangeSearch"/>
+    	<include refid="order"/>        
+    </select>    
+    
+    <select id="searchForPropertiesCount" resultClass="int" parameterClass="SearchParam">
+    	select count(*) from residential_property r 
+    	where id_Property is not null
+    	<include refid="searchWildLikeAnd"/>
+		<include refid="searchIn"/>
+    	<include refid="searchWildLikeOr"/>    	
+		<include refid="rangeSearch"/>
+    	 
+    </select>   
+        
+    <select id="searchForPropertiesCountWithOpenHouse" resultClass="int" parameterClass="SearchParam">
+    	select count(distinct r.id_property)
+    	from residential_property r, property_openhouse o 
+    	where r.id_property=o.property_id
+    	<include refid="searchWildLikeAnd"/>
+		<include refid="searchIn"/>
+    	<include refid="searchWildLikeOr"/>      	    	
+		<include refid="rangeSearch"/>
+    	 
+    </select>
+    
+        <select id="uniqueCityResults" resultMap="ResidentialPropertyResult">
+        select * from residential_property group by name_city
+    </select>
+    
+</sqlMap>

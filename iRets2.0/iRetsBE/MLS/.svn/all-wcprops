@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mtgr8_iretsigrator-v2/!svn/ver/45/iRets2.0/iRetsBE/MLS
+END
+db.properties
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mtgr8_iretsigrator-v2/!svn/ver/29/iRets2.0/iRetsBE/MLS/db.properties
+END
+imls_login_credentials.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mtgr8_iretsigrator-v2/!svn/ver/45/iRets2.0/iRetsBE/MLS/imls_login_credentials.properties
+END
+imls_field_mapping.properties
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mtgr8_iretsigrator-v2/!svn/ver/37/iRets2.0/iRetsBE/MLS/imls_field_mapping.properties
+END

@@ -1,0 +1,211 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>iRetsigrator Web Application</display-name>
+  <context-param>
+	<param-name>webAppRootKey</param-name>
+	<param-value>imls-frontend-root</param-value>
+   </context-param>
+   <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+			<!--
+				When editing this list, make sure you add/remove the appropriate
+				corresponding value in src/test/resources/web.xml as well.
+			-->
+            classpath:applicationContext-resources.xml
+            classpath:applicationContext-dao.xml
+            classpath:applicationContext-service.xml
+            classpath:applicationContext-security.xml
+        </param-value>
+    </context-param>
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>/WEB-INF/classes/log4j.properties</param-value>
+    </context-param>
+
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>SearchLocalProperties</servlet-name>
+        <servlet-class>com.irets.datadownloader.SearchPropertyServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JSONSearchLocalProperties</servlet-name>
+        <servlet-class>com.irets.datadownloader.JSONSearchPropertyServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PhotoViewServlet</servlet-name>
+        <display-name>Photo viewer servlet</display-name>
+        <servlet-class>com.irets.datadownloader.PhotoViewServlet</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <display-name>Exterior Features servlet</display-name>
+        <servlet-class>com.irets.datadownloader.ExteriorFeaturesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VersionNumberServlet</servlet-name>
+        <display-name>Version Number servlet</display-name>
+        <servlet-class>com.irets.datadownloader.VersionNumberServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <display-name>Redirect Servlet</display-name>
+        <servlet-class>com.irets.datadownloader.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CityServletXML</servlet-name>
+        <display-name>City Servlet</display-name>
+        <description>Provides the city,state and country information</description>
+        <servlet-class>com.irets.datadownloader.CityServletXML</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CityServletJSON</servlet-name>
+        <display-name>City Servlet Json format</display-name>
+        <servlet-class>com.irets.datadownloader.CityServletJSON</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CityServletXML</servlet-name>
+        <url-pattern>/SearchLocalProperties/cities.xml/*</url-pattern>
+    </servlet-mapping>
+    <!-- 
+    <servlet-mapping>
+        <servlet-name>CityServletXML</servlet-name>
+        <url-pattern>/imls/SearchLocalProperties/cities.xml/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CityServletXML</servlet-name>
+        <url-pattern>/mlsv4/SearchLocalProperties/cities.xml/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CityServletXML</servlet-name>
+        <url-pattern>/bayeast/SearchLocalProperties/cities.xml/*</url-pattern>
+    </servlet-mapping>
+     -->
+    <servlet-mapping>
+        <servlet-name>CityServletJSON</servlet-name>
+        <url-pattern>/SearchLocalProperties/cities.json/*</url-pattern>
+    </servlet-mapping>
+    <!-- 
+    <servlet-mapping>
+        <servlet-name>CityServletJSON</servlet-name>
+        <url-pattern>/imls/SearchLocalProperties/cities.json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CityServletJSON</servlet-name>
+        <url-pattern>/mlsv4/SearchLocalProperties/cities.json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CityServletJSON</servlet-name>
+        <url-pattern>/bayeast/SearchLocalProperties/cities.json/*</url-pattern>
+    </servlet-mapping>
+     -->
+    <servlet-mapping>
+        <servlet-name>SearchLocalProperties</servlet-name>
+        <url-pattern>/SearchLocalProperties.xml/*</url-pattern>
+    </servlet-mapping>
+    <!-- 
+    <servlet-mapping>
+        <servlet-name>SearchLocalProperties</servlet-name>
+        <url-pattern>/imls/SearchLocalProperties.xml/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchLocalProperties</servlet-name>
+        <url-pattern>/mlsv4/SearchLocalProperties.xml/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchLocalProperties</servlet-name>
+        <url-pattern>/bayeast/SearchLocalProperties.xml/*</url-pattern>
+    </servlet-mapping>
+     -->
+    <servlet-mapping>
+        <servlet-name>JSONSearchLocalProperties</servlet-name>
+        <url-pattern>/SearchLocalProperties.json/*</url-pattern>
+    </servlet-mapping>
+    <!-- 
+     <servlet-mapping>
+        <servlet-name>JSONSearchLocalProperties</servlet-name>
+        <url-pattern>/imls/SearchLocalProperties.json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSONSearchLocalProperties</servlet-name>
+        <url-pattern>/mlsv4/SearchLocalProperties.json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JSONSearchLocalProperties</servlet-name>
+        <url-pattern>/bayeast/SearchLocalProperties.json/*</url-pattern>
+    </servlet-mapping>
+     -->    
+    <servlet-mapping>
+        <servlet-name>PhotoViewServlet</servlet-name>
+        <url-pattern>/PhotoView/*</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/SearchLocalProperties/exteriorfeatures.xml/*</url-pattern>
+    </servlet-mapping>
+    <!-- 
+    <servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/imls/SearchLocalProperties/exteriorfeatures.xml/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/mlsv4/SearchLocalProperties/exteriorfeatures.xml/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/bayeast/SearchLocalProperties/exteriorfeatures.xml/*</url-pattern>
+    </servlet-mapping>
+    -->   
+	<servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/SearchLocalProperties/exteriorfeatures.json/*</url-pattern>
+    </servlet-mapping>
+    <!-- 
+    <servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/imls/SearchLocalProperties/exteriorfeatures.json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/mlsv4/SearchLocalProperties/exteriorfeatures.json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExteriorFeaturesServlet</servlet-name>
+        <url-pattern>/bayeast/SearchLocalProperties/exteriorfeatures.json/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/imls/SearchLocalProperties/redirect/*</url-pattern>
+    </servlet-mapping>
+     -->        
+    <servlet-mapping>
+        <servlet-name>VersionNumberServlet</servlet-name>
+        <url-pattern>/version/*</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

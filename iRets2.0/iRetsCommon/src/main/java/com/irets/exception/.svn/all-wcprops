@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mtgr8_iretsigrator-v2/!svn/ver/29/iRets2.0/iRetsCommon/src/main/java/com/irets/exception
+END
+AuthorizationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/AuthorizationException.java
+END
+DuplicateEmailException.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/DuplicateEmailException.java
+END
+DuplicateSerialNumberException.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/DuplicateSerialNumberException.java
+END
+ObjectNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/ObjectNotFoundException.java
+END
+LargeResultSetException.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mtgr8_iretsigrator-v2/!svn/ver/29/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/LargeResultSetException.java
+END
+ValidationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/ValidationException.java
+END
+DuplicateNameException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/DuplicateNameException.java
+END
+DuplicateIdentifierException.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/DuplicateIdentifierException.java
+END
+InvalidEmailException.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/InvalidEmailException.java
+END
+DuplicatePropertyException.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/exception/DuplicatePropertyException.java
+END

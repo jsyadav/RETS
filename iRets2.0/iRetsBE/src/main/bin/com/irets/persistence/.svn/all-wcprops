@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/persistence
+END
+UniversalDao.class
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/persistence/UniversalDao.class
+END
+Relation.class
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/persistence/Relation.class
+END
+UniversalDaoImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/persistence/UniversalDaoImpl.class
+END
+DaoUtil.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/persistence/DaoUtil.class
+END
+GeneralDao.class
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/persistence/GeneralDao.class
+END
+GeneralDaoImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/persistence/GeneralDaoImpl.class
+END

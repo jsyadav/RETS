@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mtgr8_iretsigrator-v2/!svn/ver/54/iRets2.0/iRetsBE/MLS_BayEast
+END
+db.properties
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mtgr8_iretsigrator-v2/!svn/ver/35/iRets2.0/iRetsBE/MLS_BayEast/db.properties
+END
+imls_bayeast_field_mapping.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mtgr8_iretsigrator-v2/!svn/ver/41/iRets2.0/iRetsBE/MLS_BayEast/imls_bayeast_field_mapping.properties
+END
+imls_bayeast_login_credentials.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mtgr8_iretsigrator-v2/!svn/ver/54/iRets2.0/iRetsBE/MLS_BayEast/imls_bayeast_login_credentials.properties
+END

@@ -1,0 +1,1 @@
+			package com.irets.exception;            /**             * @author iretsigrator.developer             *             */            public class InvalidEmailException extends Exception {                public InvalidEmailException() {}                public InvalidEmailException (String s) {                    super(s);                }            }	

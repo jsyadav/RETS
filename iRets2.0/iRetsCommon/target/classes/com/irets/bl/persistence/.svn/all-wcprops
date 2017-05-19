@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mtgr8_iretsigrator-v2/!svn/ver/45/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence
+END
+PropertyOpenHouseDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mtgr8_iretsigrator-v2/!svn/ver/45/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/PropertyOpenHouseDaoImpl.java
+END
+PropertyPhotoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/PropertyPhotoDao.java
+END
+PropertyGeoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/PropertyGeoDao.java
+END
+PropertyPhotoDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/PropertyPhotoDaoImpl.java
+END
+PropertyGeoDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/PropertyGeoDaoImpl.java
+END
+ResidentialPropertyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/ResidentialPropertyDao.java
+END
+PropertyOpenHouseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/45/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/PropertyOpenHouseDao.java
+END
+ResidentialPropertyDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsCommon/src/main/java/com/irets/bl/persistence/ResidentialPropertyDaoImpl.java
+END

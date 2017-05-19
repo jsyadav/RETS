@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception
+END
+DuplicateIdentifierException.class
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/DuplicateIdentifierException.class
+END
+InvalidEmailException.class
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/InvalidEmailException.class
+END
+DuplicatePropertyException.class
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/DuplicatePropertyException.class
+END
+AuthorizationException.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/AuthorizationException.class
+END
+DuplicateEmailException.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/DuplicateEmailException.class
+END
+DuplicateSerialNumberException.class
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/DuplicateSerialNumberException.class
+END
+ObjectNotFoundException.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/ObjectNotFoundException.class
+END
+ValidationException.class
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/ValidationException.class
+END
+DuplicateNameException.class
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mtgr8_iretsigrator-v2/!svn/ver/9/iRets2.0/iRetsBE/src/main/bin/com/irets/exception/DuplicateNameException.class
+END

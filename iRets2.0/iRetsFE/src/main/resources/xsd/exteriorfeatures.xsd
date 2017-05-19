@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://mtgr.com/rets"   elementFormDefault="qualified">
+    <xs:element name="ExteriorFeatures">
+        <xs:complexType>
+          <xs:sequence>
+              <xs:element name="ExteriorFeature" type="xs:string" maxOccurs="unbounded" minOccurs="1"/>
+          </xs:sequence>
+          <xs:attribute name="TotalCount" use="required" type="xs:integer"/>
+          <xs:attribute name="ElapsedTime" use="required" type="xs:integer"/>          
+          <xs:attribute name="Count" use="required" type="xs:integer"/>	 
+      </xs:complexType>
+    </xs:element>
+ </xs:schema>
